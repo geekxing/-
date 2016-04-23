@@ -9,13 +9,62 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource {
 
     var window: UIWindow?
+    
+    func getUserInfoWithUserId(userId: String!, completion: ((RCUserInfo!) -> Void)!) {
+        
+        let userInfo = RCUserInfo()
+        userInfo.userId = userId
+        
+        switch userId {
+        case "laixiaobing":
+            userInfo.name = "Larry"
+            userInfo.portraitUri = "http://img4.duitang.com/uploads/item/201507/08/20150708234427_vxAUX.png"
+        case "laixiaobing2":
+            userInfo.name = "赖霄冰的克隆"
+            userInfo.portraitUri = "http://www.poluoluo.com/qq/UploadFiles_7828/201604/2016042018290939.jpg"
+        default:
+            print("No way here")
+        }
+        return completion(userInfo)
+    }
+    
 
+    func connectServer(completion:() -> Void) {
+        //查询保存的Token
+        let tokenCache = NSUserDefaults.standardUserDefaults().objectForKey("kDeviceToken") as? String
+        
+        //初始化appkey
+        RCIM.sharedRCIM().initWithAppKey("p5tvi9dstgry4")
+        
+        //用token测试连接
+        RCIM.sharedRCIM().connectWithToken("M6nnfwPPo4eu9dN83KWycDkXzcOqwmiQHBKZ0O5imqsE0YudPmGYvGCEQr5z1eH6WW057EBZXm6Y8WoXZlrhEcOZqMT4bjzH", success: { (_) in
+            
+            let currentUserInfo = RCUserInfo(userId: "laixiaobing2", name: "赖霄冰克隆", portrait: "u=1596959595,73131885&fm=21&gp=0.jpg")
+            
+            print("连接成功1")
+            
+            dispatch_async(dispatch_get_main_queue()) {
+                completion()
+            }
+            
+            RCIMClient.sharedRCIMClient().currentUserInfo = currentUserInfo
+            }, error: { (_) in
+                print("连接失败！")
+        }) {
+            print("Token不正确，或失效！")
+        }
+        
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //将用户信息提供者设置为自己AppDelegate
+        RCIM.sharedRCIM().userInfoDataSource = self
+        
         return true
     }
 
