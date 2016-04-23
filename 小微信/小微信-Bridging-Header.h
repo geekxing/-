@@ -4,3 +4,4 @@
 
 #import <RongIMKit/RongIMKit.h>
 #import <KxMenu/KxMenu.h>
+#import <JSAnimatedImagesView/JSAnimatedImagesView.h>

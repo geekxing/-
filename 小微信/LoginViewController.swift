@@ -8,11 +8,12 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, JSAnimatedImagesViewDataSource {
     
     
     @IBOutlet weak var loginStackView: UIStackView!
     
+    @IBOutlet weak var wallPaperView: JSAnimatedImagesView!
     
     override func viewDidAppear(animated: Bool) {
         UIView.animateWithDuration(1) {
@@ -22,12 +23,24 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.wallPaperView.dataSource = self
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    // MARK: - JSAnimatedImagesView DataSource
+    func animatedImagesNumberOfImages(animatedImagesView: JSAnimatedImagesView!) -> UInt {
+        return 3
+    }
+    
+    func animatedImagesView(animatedImagesView: JSAnimatedImagesView!, imageAtIndex index: UInt) -> UIImage! {
+        return UIImage(named: "image\(index + 1)")
+    }
 }
+
+
 
 //extension UIView {
 //    @IBInspectable var cornerRadius: CGFloat {
