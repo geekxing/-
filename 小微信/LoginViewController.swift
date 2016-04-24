@@ -8,22 +8,25 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, JSAnimatedImagesViewDataSource {
+class LoginViewController: UIViewController, RCAnimatedImagesViewDelegate {
     
     
     @IBOutlet weak var loginStackView: UIStackView!
     
-    @IBOutlet weak var wallPaperView: JSAnimatedImagesView!
+    @IBOutlet weak var wallPaperView: RCAnimatedImagesView!
     
     override func viewDidAppear(animated: Bool) {
         UIView.animateWithDuration(1) {
             self.loginStackView.axis = UILayoutConstraintAxis.Vertical
         }
+        navigationController?.navigationBarHidden = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.wallPaperView.dataSource = self
+        self.wallPaperView.delegate = self
+        navigationController?.navigationBarHidden = true
+        self.wallPaperView.startAnimating()
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,11 +34,11 @@ class LoginViewController: UIViewController, JSAnimatedImagesViewDataSource {
     }
     
     // MARK: - JSAnimatedImagesView DataSource
-    func animatedImagesNumberOfImages(animatedImagesView: JSAnimatedImagesView!) -> UInt {
+    func animatedImagesNumberOfImages(animatedImagesView: RCAnimatedImagesView!) -> UInt {
         return 3
     }
     
-    func animatedImagesView(animatedImagesView: JSAnimatedImagesView!, imageAtIndex index: UInt) -> UIImage! {
+    func animatedImagesView(animatedImagesView: RCAnimatedImagesView!, imageAtIndex index: UInt) -> UIImage! {
         return UIImage(named: "image\(index + 1)")
     }
 }

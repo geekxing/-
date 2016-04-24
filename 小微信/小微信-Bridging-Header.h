@@ -5,3 +5,5 @@
 #import <RongIMKit/RongIMKit.h>
 #import <KxMenu/KxMenu.h>
 #import <JSAnimatedImagesView/JSAnimatedImagesView.h>
+#import "RCAnimatedImagesView.h"
+#import <AJWValidator/AJWValidator.h>

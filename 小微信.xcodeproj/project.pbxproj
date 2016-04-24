@@ -20,6 +20,11 @@
 		1AFBFCDB1CCA5D5A00842AA8 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBFCDA1CCA5D5A00842AA8 /* Chat.storyboard */; };
 		1AFD58671CCB1AF30053533E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD58661CCB1AF30053533E /* LoginViewController.swift */; };
 		1AFD58691CCB1E3A0053533E /* HeaderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD58681CCB1E3A0053533E /* HeaderImageView.swift */; };
+		1AFF85841CCCFA6C00C4CC47 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF85821CCCFA6C00C4CC47 /* Login.storyboard */; };
+		1AFF85861CCCFABF00C4CC47 /* RegTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF85851CCCFABF00C4CC47 /* RegTableViewController.swift */; };
+		1AFF85891CCCFEB200C4CC47 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF85881CCCFEB200C4CC47 /* SwiftNotice.swift */; };
+		1AFF858F1CCCFF2F00C4CC47 /* RCAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF858E1CCCFF2F00C4CC47 /* RCAnimatedImagesView.m */; };
+		1AFF85931CCD03C300C4CC47 /* TextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF85921CCD03C300C4CC47 /* TextBox.swift */; };
 		A17A39131C21A85F51501809 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0073DC8B60C796250BB98F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +45,12 @@
 		1AFBFCDA1CCA5D5A00842AA8 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		1AFD58661CCB1AF30053533E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1AFD58681CCB1E3A0053533E /* HeaderImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderImageView.swift; sourceTree = "<group>"; };
+		1AFF85831CCCFA6C00C4CC47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		1AFF85851CCCFABF00C4CC47 /* RegTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegTableViewController.swift; sourceTree = "<group>"; };
+		1AFF85881CCCFEB200C4CC47 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
+		1AFF858D1CCCFF0F00C4CC47 /* RCAnimatedImagesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCAnimatedImagesView.h; sourceTree = "<group>"; };
+		1AFF858E1CCCFF2F00C4CC47 /* RCAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCAnimatedImagesView.m; sourceTree = "<group>"; };
+		1AFF85921CCD03C300C4CC47 /* TextBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBox.swift; sourceTree = "<group>"; };
 		5C0073DC8B60C796250BB98F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		72CC0CA7678BACA511AA0E74 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EC693666A9EDD1A294B4A46A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +90,7 @@
 		1A017CAB1CC91BD0007F3E6E /* 小微信 */ = {
 			isa = PBXGroup;
 			children = (
+				1AFF85871CCCFEA800C4CC47 /* 3rd */,
 				1A017CC01CC91DE7007F3E6E /* 小微信-Bridging-Header.h */,
 				1A017CB81CC91BD0007F3E6E /* Info.plist */,
 				1A017CAC1CC91BD0007F3E6E /* AppDelegate.swift */,
@@ -87,14 +99,27 @@
 				1A017CB31CC91BD0007F3E6E /* Assets.xcassets */,
 				1A017CB51CC91BD0007F3E6E /* LaunchScreen.storyboard */,
 				1A017CB01CC91BD0007F3E6E /* Main.storyboard */,
+				1AFF85821CCCFA6C00C4CC47 /* Login.storyboard */,
 				1AFBFCDA1CCA5D5A00842AA8 /* Chat.storyboard */,
 				1AFBFCD71CCA5D4300842AA8 /* Contacts.storyboard */,
 				1AFBFCD51CCA5D3000842AA8 /* Server.storyboard */,
 				1AFBFCD21CCA5D0100842AA8 /* About.storyboard */,
 				1AFD58661CCB1AF30053533E /* LoginViewController.swift */,
 				1AFD58681CCB1E3A0053533E /* HeaderImageView.swift */,
+				1AFF85851CCCFABF00C4CC47 /* RegTableViewController.swift */,
 			);
 			path = "小微信";
+			sourceTree = "<group>";
+		};
+		1AFF85871CCCFEA800C4CC47 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				1AFF85881CCCFEB200C4CC47 /* SwiftNotice.swift */,
+				1AFF858D1CCCFF0F00C4CC47 /* RCAnimatedImagesView.h */,
+				1AFF858E1CCCFF2F00C4CC47 /* RCAnimatedImagesView.m */,
+				1AFF85921CCD03C300C4CC47 /* TextBox.swift */,
+			);
+			name = 3rd;
 			sourceTree = "<group>";
 		};
 		5D7D38A89C10C39471E0A156 /* Frameworks */ = {
@@ -184,6 +209,7 @@
 				1AFBFCD91CCA5D4300842AA8 /* Contacts.storyboard in Resources */,
 				1AFBFCDB1CCA5D5A00842AA8 /* Chat.storyboard in Resources */,
 				1AFBFCD61CCA5D3000842AA8 /* Server.storyboard in Resources */,
+				1AFF85841CCCFA6C00C4CC47 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,9 +269,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AFD58691CCB1E3A0053533E /* HeaderImageView.swift in Sources */,
+				1AFF85931CCD03C300C4CC47 /* TextBox.swift in Sources */,
 				1AFD58671CCB1AF30053533E /* LoginViewController.swift in Sources */,
+				1AFF858F1CCCFF2F00C4CC47 /* RCAnimatedImagesView.m in Sources */,
 				1A017CAD1CC91BD0007F3E6E /* AppDelegate.swift in Sources */,
 				1AFBFCCF1CCA378A00842AA8 /* ConversationViewController.swift in Sources */,
+				1AFF85861CCCFABF00C4CC47 /* RegTableViewController.swift in Sources */,
+				1AFF85891CCCFEB200C4CC47 /* SwiftNotice.swift in Sources */,
 				1AFBFCD11CCA4E0F00842AA8 /* ConversationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +313,14 @@
 				1AFBFCD81CCA5D4300842AA8 /* Base */,
 			);
 			name = Contacts.storyboard;
+			sourceTree = "<group>";
+		};
+		1AFF85821CCCFA6C00C4CC47 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AFF85831CCCFA6C00C4CC47 /* Base */,
+			);
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

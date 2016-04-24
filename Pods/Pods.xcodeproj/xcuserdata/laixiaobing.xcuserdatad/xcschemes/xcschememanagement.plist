@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AJWValidator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JSAnimatedImagesView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6073AE8FE2CABF993C099DF78C4F4D4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>73615AB1195988E96A2149E6ED019E40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8F06F49D64E04DCD9683D916034330CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>BB658585BF9CF06C3CC471ECC82B9D08</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D4D2F029492727B9165039026FE65A48</key>
 		<dict>
 			<key>primary</key>
 			<true/>
