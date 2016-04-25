@@ -53,6 +53,18 @@ class ConversationTableViewController: RCConversationListViewController {
                 ])
             self.refreshConversationTableViewIfNeeded()
         }
+        let image = UIImage(named: "head1")
+        let leftImageItemView = UIImageView(frame: CGRectMake(3, 25, 40, 40))
+        leftImageItemView.layer.cornerRadius = CGFloat(20)
+        leftImageItemView.layer.masksToBounds = true
+        leftImageItemView.image = image
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftImageItemView)
+        let leftBarButton = navigationItem.leftBarButtonItem
+        leftBarButton?.action = #selector(transtoSideBar)
+    }
+    
+    func transtoSideBar() {
+        
     }
 
     override func didReceiveMemoryWarning() {

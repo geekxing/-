@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource {
 
@@ -41,9 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource {
         
         //用token测试连接
         RCIM.sharedRCIM().connectWithToken("M6nnfwPPo4eu9dN83KWycDkXzcOqwmiQHBKZ0O5imqsE0YudPmGYvGCEQr5z1eH6WW057EBZXm6Y8WoXZlrhEcOZqMT4bjzH", success: { (_) in
-            
             let currentUserInfo = RCUserInfo(userId: "laixiaobing2", name: "赖霄冰克隆", portrait: "u=1596959595,73131885&fm=21&gp=0.jpg")
-            
             print("连接成功1")
             
             dispatch_async(dispatch_get_main_queue()) {
@@ -62,10 +61,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        //将用户信息提供者设置为自己AppDelegate
+        //将用户信息提供者设置为自己的AppDelegate
         RCIM.sharedRCIM().userInfoDataSource = self
         AVOSCloud.setApplicationId("S8IggJCxymrFGBHJ2imUqyP9-gzGzoHsz", clientKey: "1llitKtLP8AqiRjNhRmm23TX")
-        
+
         return true
     }
 

@@ -37,6 +37,7 @@ class RegTableViewController: UITableViewController {
         regdata.setObject(mobile.text, forKey: "mobile")
         regdata.setObject(ques.text, forKey: "question")
         regdata.setObject(answer.text, forKey: "answer")
+        regdata.setObject("", forKey: "token")
         //查询用户名是否已被注册
         let query = AVQuery(className: "XBUser")
         query.whereKey("user", equalTo: user.text)
