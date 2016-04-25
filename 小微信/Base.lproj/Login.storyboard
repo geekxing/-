@@ -162,7 +162,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ufJ-P4-7eO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="必填" id="qgZ-CY-lf5">
                                 <cells>
@@ -327,9 +327,12 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="answer" destination="eRv-hP-NZG" id="SO2-5R-JTp"/>
                         <outlet property="doneButton" destination="V9z-Kp-pQm" id="rSD-uT-50k"/>
                         <outlet property="mail" destination="OmL-3I-0UH" id="xRL-hj-Fdw"/>
+                        <outlet property="mobile" destination="8bC-ut-7sr" id="OSo-8z-PyQ"/>
                         <outlet property="pass" destination="G19-4e-Vff" id="hDa-GM-E3J"/>
+                        <outlet property="ques" destination="rUA-kU-kWi" id="3ky-8g-Zbt"/>
                         <outlet property="user" destination="05S-dX-yOn" id="8Br-3x-thR"/>
                         <outletCollection property="requiredOptions" destination="05S-dX-yOn" collectionClass="NSMutableArray" id="h2t-ha-mEX"/>
                         <outletCollection property="requiredOptions" destination="G19-4e-Vff" collectionClass="NSMutableArray" id="Yul-h9-Qfa"/>

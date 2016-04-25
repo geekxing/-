@@ -24,6 +24,45 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>00F91680BD921ED2CF56571AE1510EFF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVHistoryMessageQuery.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01DB87A22493E6C67E25F698B4E647DF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVOSCloud.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01DE2F596EF1EF733C656CEDF8181131</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVMessage.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>02A4023F50EF0CBF778EB6A5BFFC3C13</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -38,10 +77,25 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>02B7C5AC447987F824E2AC002DFADB31</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AJWValidatorRequiredRule.m</string>
+			<key>path</key>
+			<string>AJWValidator/AJWValidatorRequiredRule.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>0304FC325ECF1918F314289A485D0C13</key>
 		<dict>
 			<key>fileRef</key>
-			<string>75DE27B2872981DCF94E433CD4B3C9E5</string>
+			<string>ECF8A8D5B99B4D3DA47541300B23A694</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -65,34 +119,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0453BD45AE0106261A3D0B967C97D361</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>MSWeakTimer.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>07EAF3047539F07AB3F9E0553D7458E0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>768539E15BB6C56A7980BD07F91DE86C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>08D46FF23223A44A71589F25103A1226</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2AAEB486365D741B1713B9D60EF16FEA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0934244BAAD1BC6E53020BBC35962D66</key>
+		<key>05F7ECCD0C7D7D72B7488DFC5FD02FCD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -101,16 +128,56 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AJWValidatorRule.h</string>
+			<string>AJWValidatorCustomRule.h</string>
 			<key>path</key>
-			<string>AJWValidator/AJWValidatorRule.h</string>
+			<string>AJWValidator/AJWValidatorCustomRule.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0657F4DB578399D042DE3431F74B7EEB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVStatus.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07EAF3047539F07AB3F9E0553D7458E0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9DF8ED2487D2AC616608A0D1E3D120DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>08D46FF23223A44A71589F25103A1226</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8536003338F6461CECFFF015E0DAB600</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>092989BBAEBD1D845F78E414B655D8E3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVObject+Subclass.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0973374A3708DBBB13CA3F9FB6E4F200</key>
 		<dict>
 			<key>fileRef</key>
-			<string>946210E21F7F7B88C516A67B0459CDD9</string>
+			<string>C13BCBDA68A213789D8FDAC663540AFB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -142,7 +209,7 @@
 		<key>0C74E1DB477E1D994737653BAD30CD5E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5301FF0B6B51AF21FCB056E4ED3E234B</string>
+			<string>29880A86052E71066BF1D4952A8A7BC4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -210,29 +277,25 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>0FBBECDAF50598B597E48B1FB4F9BBE9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MSWeakTimer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>106E439844A7F96DDB2A650C0E18F88B</key>
 		<dict>
 			<key>fileRef</key>
 			<string>272643F56613CA0D336AE3DBF19DC404</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>1076ABD18E008C46BA463FFCC0DCD210</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>62896923CADB7D914A2E3A1681C54B28</string>
-				<string>2AAEB486365D741B1713B9D60EF16FEA</string>
-				<string>4E944BDDF2E0DB1D8F567234790B8376</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/KxMenu</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>10834806BD7B412BC24F347361FA2C8E</key>
 		<dict>
@@ -247,16 +310,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>112BB52FC0772E33DFA4A3988F920AE3</key>
+		<key>134C9F0BCD74BAB8079384A9382F4A4B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>zh-Hans.lproj</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/zh-Hans.lproj</string>
+			<string>MSWeakTimer.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -273,6 +336,36 @@
 			<string>6E7E5AF37923BFA48D6994B9BFC6535F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>15FCD09D6A5053CD350202A1CA357A9B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AJWValidatorRequiredRule.h</string>
+			<key>path</key>
+			<string>AJWValidator/AJWValidatorRequiredRule.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>176B486A69DF836B61E73796DBFD72A4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>name</key>
+			<string>Emoji.plist</string>
+			<key>path</key>
+			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/Emoji.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>18340F12838DEE43507667CC74401EB1</key>
 		<dict>
@@ -291,28 +384,11 @@
 		<key>19D07F015D89261D744633621B41AF13</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7CC20DD63128A1A27192011CFCF7DD0F</string>
+			<string>881348D563428E9B738A2B2CC001BC1C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>1B224C8184AB195A6568AF05CED1465E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>728DBF0975940C653ED40B6D9B692535</string>
-				<string>768539E15BB6C56A7980BD07F91DE86C</string>
-				<string>B977C86B18D4B12322FCBAC007EA0C57</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/JSAnimatedImagesView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1B528251E9C4C5AE144B65A8683F2D34</key>
+		<key>1C6369EB26D74A8C39CC0B975CEF9041</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -320,21 +396,45 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AJWValidatorEqualRule.h</string>
 			<key>path</key>
-			<string>AJWValidator/AJWValidatorEqualRule.h</string>
+			<string>AVHistoryMessage.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1CCACF3F705916D12241A4DFE64BBC64</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MSWeakTimer.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1CD72CB115D6AC6EEF0EFABAAD15F67A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>83D60CB5B84D4F9E4BF1B3DE3CB99733</string>
+			<string>EF662C80913C995FDD6087F36056C77D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>230DEBF5AE21C577FD367CFF973DE9E0</key>
+		<key>1DC7F1D532688BE9A9DC454B5AC9BA5C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BCCAE01F6C159E8D7BCB3466D2476C79</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FBC41ED1AB4DEACDD50ABC9A1E89315</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -343,7 +443,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AJWValidator-prefix.pch</string>
+			<string>AVUser.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>20BEAF33EDB9044B7BD3021E47CF2615</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVObject.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -360,38 +473,27 @@
 			<key>remoteInfo</key>
 			<string>KxMenu</string>
 		</dict>
-		<key>2498E5DAF1378C3721C0410D3BF3893D</key>
+		<key>2655B28E6CE4FBBC67A13DCBAC4A8FDD</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>2DBB8B0E1DBBA3DC0133A0225F1D76F8</string>
+				<string>9DF8ED2487D2AC616608A0D1E3D120DA</string>
+				<string>44E09C978ECB4200CF1A7992D6373767</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>AJWValidator.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>25B3787074ACF8F28982F1873715CF62</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>KxMenu.m</string>
+			<string>Support Files</string>
 			<key>path</key>
-			<string>Source/KxMenu.m</string>
+			<string>../Target Support Files/JSAnimatedImagesView</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2685FFC76BC28A18B255A8DCB24C3815</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E12D7A3557413618BE4FC21B7103569F</string>
+			<string>ED73C92E322AD567DFE522B49078951E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -408,23 +510,33 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>27EF7409B4C7E45EBB9CFC11E11AE8B1</key>
+		<key>2754C6B73183BF251FDE94917150FF6A</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>88663C2A19F328B2842B5C2A9F05A546</string>
-				<string>2FA263C77A6B771013AE6D8D71B955AB</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>RongCloudIMKit</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>RongCloudIMKit</string>
+			<string>AVQuery.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2AAEB486365D741B1713B9D60EF16FEA</key>
+		<key>28A1CB550AB05AE19ED8A717685BDC53</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVSignature.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>29880A86052E71066BF1D4952A8A7BC4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -432,8 +544,26 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AJWStringValidator.m</string>
 			<key>path</key>
-			<string>KxMenu-dummy.m</string>
+			<string>AJWValidator/AJWStringValidator.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>29A053407A0FED7D9C03BBA3CCB2ADCB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E58F6CF8F47A61EA32ACA5D17CA871B7</string>
+				<string>44126344BCA230815F71C6EA4C43EA74</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>RongCloudIMKit</string>
+			<key>path</key>
+			<string>RongCloudIMKit</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -524,10 +654,23 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>2DBB8B0E1DBBA3DC0133A0225F1D76F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>JSAnimatedImagesView.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>2E7422E1C0B11F2DC67EC7C33D969169</key>
 		<dict>
 			<key>fileRef</key>
-			<string>45484B7C08CE077A2D8425D0E5EA0BB5</string>
+			<string>8C4CBBEE49AE2C095A1F59F11412BA26</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -538,43 +681,12 @@
 				</array>
 			</dict>
 		</dict>
-		<key>2EB44F861D1AEFEB985E8FC44220ADCC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AJWValidator+Private.h</string>
-			<key>path</key>
-			<string>AJWValidator/AJWValidator+Private.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>2EEF014CC6B5DA1F3994FE4142A9B6BC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>FCC1351C09999D794AB9F1BC42CBDD93</string>
+			<string>5524D6966BFCD64040C605B86ED1892D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>2FA263C77A6B771013AE6D8D71B955AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F099327F2CCE03549AAD51B65A2050F9</string>
-				<string>6FD6144FA71C44F7E81AF0BB775538DD</string>
-				<string>C19D8F38F9F9E74B0B771AEEFD7332B9</string>
-				<string>112BB52FC0772E33DFA4A3988F920AE3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>30C1B2FA6B4540DD61E41D3A5B05464B</key>
 		<dict>
@@ -588,6 +700,23 @@
 			<string>BB658585BF9CF06C3CC471ECC82B9D08</string>
 			<key>remoteInfo</key>
 			<string>MSWeakTimer</string>
+		</dict>
+		<key>3103E54E9BA2C90CC7EE8D2D0E983B5B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>72BDC98B4B48F77CAEE89DFF8D415CAA</string>
+				<string>D2D40D7CC85A271C07B125B81BD933DD</string>
+				<string>BC6C7E24662DC576426EEAFCCAE039D3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/AJWValidator</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>319413BC3DEBB2FE6CD5C03E41ACB3CF</key>
 		<dict>
@@ -604,10 +733,25 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
+		<key>32C7F67406FA4D1C56ADB35F3AAE4A51</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libopencore-amrnb.a</string>
+			<key>path</key>
+			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/libopencore-amrnb.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>337F6AC7EDC448F71460B1EC813F57A4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C20472128084C34B494B810D0B378867</string>
+			<string>BA09DD920DD443B2CE56F8209C40529C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -629,7 +773,7 @@
 			<key>targetProxy</key>
 			<string>E6F1116C38D6DDCA5E97008EFE2B12B2</string>
 		</dict>
-		<key>33E7FC99B6B55566912D8E12EFBC5C07</key>
+		<key>3445B4F69341C015704EDD20B6DC1F40</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -637,8 +781,41 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AJWNumericValidator.m</string>
 			<key>path</key>
-			<string>JSAnimatedImagesView.m</string>
+			<string>AJWValidator/AJWNumericValidator.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>346612CF8B11A90B4ACC99835FFFECDD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F980D0D9F22F1E3E93F9252066FA9105</string>
+				<string>A595127B0AA2DEE235FD67C5EC86FB6B</string>
+				<string>55C42799D50B1E9990226E5E855FA047</string>
+				<string>5C4E2820E7970D18EAB196C32067B471</string>
+				<string>98288A5FDD3A68A04661519F1B32BFF9</string>
+				<string>29A053407A0FED7D9C03BBA3CCB2ADCB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>351548B48C2435B3D6C360E6F2C3A407</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVAnalytics.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -655,10 +832,25 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>3B797F120AD0B47FA6C1555E434A6F5B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AJWValidatorEqualRule.h</string>
+			<key>path</key>
+			<string>AJWValidator/AJWValidatorEqualRule.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>3E59F89B9853896EB439D2C9E84B5DF3</key>
 		<dict>
 			<key>fileRef</key>
-			<string>EA960A458E31FA0A9A24AEBB7C3FBD57</string>
+			<string>D2D40D7CC85A271C07B125B81BD933DD</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -676,18 +868,33 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>41681D6C04345774806230DC9240E476</key>
+		<key>3EF22C32D70EA6AAA49969E6236E1105</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AJWValidatorEqualRule.m</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AJWValidator/AJWValidatorEqualRule.m</string>
+			<string>AVFile.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>42E736D6E005840A7F9D0A044CD7CC23</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F9D25A475143908C205AAB864399A781</string>
+				<string>8536003338F6461CECFFF015E0DAB600</string>
+				<string>DD97A8AD67545DB42827659CA5FAD743</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/KxMenu</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -704,7 +911,23 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>45484B7C08CE077A2D8425D0E5EA0BB5</key>
+		<key>44126344BCA230815F71C6EA4C43EA74</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>176B486A69DF836B61E73796DBFD72A4</string>
+				<string>A0F0D3FAF1C61764A42718393DE04FF0</string>
+				<string>AB93DD4DEE71AF215EB25CA28BB58F0D</string>
+				<string>53FD949251BBEA76BB00F64A07526D09</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44E09C978ECB4200CF1A7992D6373767</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -712,23 +935,21 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AJWValidatorRegularExpressionRule.h</string>
 			<key>path</key>
-			<string>AJWValidator/AJWValidatorRegularExpressionRule.h</string>
+			<string>JSAnimatedImagesView-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>471526600A1C97327F187133810C665A</key>
+		<key>4953B15ADDFAF40970FF87F19128C190</key>
 		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>RongIMKit.framework</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/RongIMKit.framework</string>
+			<string>AVSearchSortBuilder.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -786,7 +1007,7 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>4E944BDDF2E0DB1D8F567234790B8376</key>
+		<key>4E787C1AD4324C0662193A3E2DB0F977</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -795,7 +1016,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>KxMenu-prefix.pch</string>
+			<string>AVSession.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -815,7 +1036,7 @@
 		<key>4FA130C5901AF104149154CB06AE061C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>33E7FC99B6B55566912D8E12EFBC5C07</string>
+			<string>535FA69D274D87C69413FFA195ED8497</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -824,25 +1045,23 @@
 				<string>-DOS_OBJECT_USE_OBJC=0</string>
 			</dict>
 		</dict>
-		<key>5149CCCA056C7B0B74990AE4F003FDCF</key>
+		<key>502C94E5A8EBA6F9EFB82C96E7837530</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AJWNumericValidator.m</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AJWValidator/AJWNumericValidator.m</string>
+			<string>AVGroup.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>51AA72C27CB2BF124B229CFFB15CFED5</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>2498E5DAF1378C3721C0410D3BF3893D</string>
+			<string>72BDC98B4B48F77CAEE89DFF8D415CAA</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -876,7 +1095,7 @@
 		<key>51E4F417C4A61170402BCD10668D0F00</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5DAF90A8002C89C7EF2B2B887B0DAEB9</string>
+			<string>15FCD09D6A5053CD350202A1CA357A9B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -887,7 +1106,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>5301FF0B6B51AF21FCB056E4ED3E234B</key>
+		<key>535FA69D274D87C69413FFA195ED8497</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -895,10 +1114,8 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AJWStringValidator.m</string>
 			<key>path</key>
-			<string>AJWValidator/AJWStringValidator.m</string>
+			<string>JSAnimatedImagesView.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -916,7 +1133,52 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>579888E87B651DD529E8725744405004</key>
+		<key>53FD949251BBEA76BB00F64A07526D09</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>zh-Hans.lproj</string>
+			<key>path</key>
+			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/zh-Hans.lproj</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5524D6966BFCD64040C605B86ED1892D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AJWValidatorRegularExpressionRule.m</string>
+			<key>path</key>
+			<string>AJWValidator/AJWValidatorRegularExpressionRule.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>55C42799D50B1E9990226E5E855FA047</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D051D3E05121888FB278031191968838</string>
+				<string>535FA69D274D87C69413FFA195ED8497</string>
+				<string>2655B28E6CE4FBBC67A13DCBAC4A8FDD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>JSAnimatedImagesView</string>
+			<key>path</key>
+			<string>JSAnimatedImagesView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>585F8F0BFC5D66F1A090C1EB59DDF4F0</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -925,9 +1187,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>AJWNumericValidator.h</string>
+			<string>KxMenu.h</string>
 			<key>path</key>
-			<string>AJWValidator/AJWNumericValidator.h</string>
+			<string>Source/KxMenu.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1031,10 +1293,25 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>5A29547C30982D6DAA4300F45B19A3A4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AJWValidatorRemoteRule.m</string>
+			<key>path</key>
+			<string>AJWValidator/AJWValidatorRemoteRule.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>5A6C0981143624108509628DA1AE393A</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>0453BD45AE0106261A3D0B967C97D361</string>
+			<string>134C9F0BCD74BAB8079384A9382F4A4B</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -1065,18 +1342,20 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>5DAF90A8002C89C7EF2B2B887B0DAEB9</key>
+		<key>5C4E2820E7970D18EAB196C32067B471</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>585F8F0BFC5D66F1A090C1EB59DDF4F0</string>
+				<string>E85DD61840ED7AB36A16945E1A18A6E7</string>
+				<string>42E736D6E005840A7F9D0A044CD7CC23</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>AJWValidatorRequiredRule.h</string>
+			<string>KxMenu</string>
 			<key>path</key>
-			<string>AJWValidator/AJWValidatorRequiredRule.h</string>
+			<string>KxMenu</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1109,18 +1388,16 @@
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
-		<key>608CD1ED9200FAF6B67E0C96252C4C1E</key>
+		<key>6141DF883CDBD9E72F264A6F6C44990B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AJWValidatorCustomRule.m</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AJWValidator/AJWValidatorCustomRule.m</string>
+			<string>AVPush.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1156,40 +1433,12 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>62896923CADB7D914A2E3A1681C54B28</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>KxMenu.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>63F62B03A1584EEA8FB80CED4698DF0E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>98EA78A99ED69E9A1102907123A053BA</string>
+			<string>8A7AB3316357C38DB7288572B9B4F4BE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>65DA7CB7961348C388F68D430CEA16D5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AJWValidatorRule.m</string>
-			<key>path</key>
-			<string>AJWValidator/AJWValidatorRule.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>66454A929ACCF49B95ACFDE9CAC27E17</key>
 		<dict>
@@ -1225,14 +1474,14 @@
 		<key>68183B4B24EF9C461E18A0CC551373A0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>65DA7CB7961348C388F68D430CEA16D5</string>
+			<string>A763AD792E604B0436B70C59DF3BB5D4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>68D1E4BCCA72A5C96E1ACB1BEAAD54CB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>579888E87B651DD529E8725744405004</string>
+			<string>F16D3ED3E8F781A869D85BF6358B415F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1253,6 +1502,32 @@
 			<string>text.script.sh</string>
 			<key>path</key>
 			<string>Pods-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6989CF31CB7EA5AF968042407FBD809F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVAvailability.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6A23D287E40F579BCB6DD2B860CFD5BD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVACL.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1289,20 +1564,7 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>6FD6144FA71C44F7E81AF0BB775538DD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>en.lproj</string>
-			<key>path</key>
-			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/en.lproj</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>71505BDB55C9E3FB94A95EA02495B7CA</key>
+		<key>702270726E6A88196D3B16AEA9EC2F74</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1310,10 +1572,8 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AJWValidatorCustomRule.h</string>
 			<key>path</key>
-			<string>AJWValidator/AJWValidatorCustomRule.h</string>
+			<string>MSWeakTimer-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1330,7 +1590,20 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>728DBF0975940C653ED40B6D9B692535</key>
+		<key>71B3CFBA67EA35DF2D0DBF267385C3F4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVCloud.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>72BDC98B4B48F77CAEE89DFF8D415CAA</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1339,7 +1612,7 @@
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>JSAnimatedImagesView.xcconfig</string>
+			<string>AJWValidator.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1368,23 +1641,10 @@
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
-		<key>73AD32ED31557B98B44E8CCBE8B7C444</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MSWeakTimer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>753A4BDD1B85B30E30E45D7166A47507</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>728DBF0975940C653ED40B6D9B692535</string>
+			<string>2DBB8B0E1DBBA3DC0133A0225F1D76F8</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -1415,38 +1675,23 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>75DE27B2872981DCF94E433CD4B3C9E5</key>
+		<key>766F39ADCB39C4A8A71C4BB55D68E2D6</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>AJWStringValidator.h</string>
+			<string>RongIMLib.framework</string>
 			<key>path</key>
-			<string>AJWValidator/AJWStringValidator.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>768539E15BB6C56A7980BD07F91DE86C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>JSAnimatedImagesView-dummy.m</string>
+			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/RongIMLib.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>76FAD72A9DA7ABED5A7F74151CC4F6D0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A68E4E906EA31DB54DB21AD66B3F6D4E</string>
+			<string>1CCACF3F705916D12241A4DFE64BBC64</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1457,26 +1702,13 @@
 				</array>
 			</dict>
 		</dict>
-		<key>7CC20DD63128A1A27192011CFCF7DD0F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MSWeakTimer-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>433CD3331B6C3787F473C941B61FC68F</string>
-				<string>BF481BE162A4ACECFFFA942C1C295489</string>
+				<string>346612CF8B11A90B4ACC99835FFFECDD</string>
 				<string>FD727C25B99894332279AF934B248A4D</string>
 				<string>037C0CA694176A3C0915F62C9D20B3E6</string>
 			</array>
@@ -1488,7 +1720,7 @@
 		<key>7E689036D13D3F00676D631FACC9C7E8</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1B528251E9C4C5AE144B65A8683F2D34</string>
+			<string>3B797F120AD0B47FA6C1555E434A6F5B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1499,14 +1731,42 @@
 				</array>
 			</dict>
 		</dict>
+		<key>7EC4A3C847A9B0A5BCC61388B6813024</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AJWValidatorRemoteRule.h</string>
+			<key>path</key>
+			<string>AJWValidator/AJWValidatorRemoteRule.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F2FF31F59614A7213141689CE9D86EF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVRole.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>7F5CD29FF29FA6942479F4871DEC74F4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9708564A28FE2CA83FAB5AE17C4370AB</string>
+			<string>02B7C5AC447987F824E2AC002DFADB31</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>83D60CB5B84D4F9E4BF1B3DE3CB99733</key>
+		<key>8536003338F6461CECFFF015E0DAB600</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1514,17 +1774,15 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AJWValidator.m</string>
 			<key>path</key>
-			<string>AJWValidator/AJWValidator.m</string>
+			<string>KxMenu-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>86854E827E79182ADC0A1CEE901E6F8D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>25B3787074ACF8F28982F1873715CF62</string>
+			<string>E85DD61840ED7AB36A16945E1A18A6E7</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1547,35 +1805,31 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>88663C2A19F328B2842B5C2A9F05A546</key>
+		<key>881348D563428E9B738A2B2CC001BC1C</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>DE706D52763B8DB7188A4B9EFF8FC1B8</string>
-				<string>471526600A1C97327F187133810C665A</string>
-				<string>C055FDEE555F1019DCC5CD1DFA31D425</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MSWeakTimer-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>889C30B90A30B48D24269AB51C126EA2</key>
+		<key>8A7AB3316357C38DB7288572B9B4F4BE</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>2498E5DAF1378C3721C0410D3BF3893D</string>
-				<string>EA960A458E31FA0A9A24AEBB7C3FBD57</string>
-				<string>230DEBF5AE21C577FD367CFF973DE9E0</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>Support Files</string>
+			<string>AJWValidatorRangeRule.m</string>
 			<key>path</key>
-			<string>../Target Support Files/AJWValidator</string>
+			<string>AJWValidator/AJWValidatorRangeRule.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1594,7 +1848,7 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>8D34C56A7FF7E838CD3ABD034CC3CFFC</key>
+		<key>8C4CBBEE49AE2C095A1F59F11412BA26</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1602,8 +1856,10 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AJWValidatorRegularExpressionRule.h</string>
 			<key>path</key>
-			<string>JSAnimatedImagesView.h</string>
+			<string>AJWValidator/AJWValidatorRegularExpressionRule.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1648,7 +1904,7 @@
 		<key>93009246BD4D0A6DA350A380215ABCFC</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>0453BD45AE0106261A3D0B967C97D361</string>
+			<string>134C9F0BCD74BAB8079384A9382F4A4B</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -1679,25 +1935,10 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>946210E21F7F7B88C516A67B0459CDD9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIView+AJWValidator.h</string>
-			<key>path</key>
-			<string>AJWValidator/UIView+AJWValidator.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>9478754A6DDC3AE8C409A3DE08DFA3A5</key>
 		<dict>
 			<key>fileRef</key>
-			<string>0934244BAAD1BC6E53020BBC35962D66</string>
+			<string>9D6FE028B8C1E75643EC11D0728C3810</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1707,21 +1948,6 @@
 					<string>Project</string>
 				</array>
 			</dict>
-		</dict>
-		<key>9708564A28FE2CA83FAB5AE17C4370AB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AJWValidatorRequiredRule.m</string>
-			<key>path</key>
-			<string>AJWValidator/AJWValidatorRequiredRule.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>97A9C65679125A84426A2D817190A03E</key>
 		<dict>
@@ -1738,10 +1964,27 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
+		<key>98288A5FDD3A68A04661519F1B32BFF9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1CCACF3F705916D12241A4DFE64BBC64</string>
+				<string>0FBBECDAF50598B597E48B1FB4F9BBE9</string>
+				<string>C7F839063C513D84D6988937AE0B3CED</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MSWeakTimer</string>
+			<key>path</key>
+			<string>MSWeakTimer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>9849F773ED88D2BE3826F9141BE63912</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D448F73B5C327084EB39B7EE0D843CEF</string>
+			<string>E9775796722B251B33E9D276CDED2047</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1765,25 +2008,10 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>98EA78A99ED69E9A1102907123A053BA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AJWValidatorRangeRule.m</string>
-			<key>path</key>
-			<string>AJWValidator/AJWValidatorRangeRule.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>992338D3263D95D4B96D2B33D719D13A</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>62896923CADB7D914A2E3A1681C54B28</string>
+			<string>F9D25A475143908C205AAB864399A781</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -1814,6 +2042,19 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>9A09162093FAC74872E03FE10C77DCBA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVGeoPoint.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>9ADE917D9CBB41A4419450190738278F</key>
 		<dict>
 			<key>explicitFileType</key>
@@ -1829,10 +2070,64 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
+		<key>9D6FE028B8C1E75643EC11D0728C3810</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AJWValidatorRule.h</string>
+			<key>path</key>
+			<string>AJWValidator/AJWValidatorRule.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9DF8ED2487D2AC616608A0D1E3D120DA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>JSAnimatedImagesView-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9ED5A8D47B15B245814070C6C899F020</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVCloudQueryResult.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A0F0D3FAF1C61764A42718393DE04FF0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>en.lproj</string>
+			<key>path</key>
+			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/en.lproj</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>A184DD3BAD74CD6E869DA6F3FE075F4C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>DA1D5423D453A3C2A69B3BA5F0F3965A</string>
+			<string>7EC4A3C847A9B0A5BCC61388B6813024</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1859,7 +2154,7 @@
 		<key>A2040AE582CEC638D671859B87B50EF1</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>2498E5DAF1378C3721C0410D3BF3893D</string>
+			<string>72BDC98B4B48F77CAEE89DFF8D415CAA</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -1890,20 +2185,64 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>A532A3C3CDD18C2F7C8806B47F87F5C5</key>
+		<key>A3B9B794E8917F28E2CC97C780C3ABE3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AJWValidatorEqualRule.m</string>
+			<key>path</key>
+			<string>AJWValidator/AJWValidatorEqualRule.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A595127B0AA2DEE235FD67C5EC86FB6B</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>A68E4E906EA31DB54DB21AD66B3F6D4E</string>
-				<string>73AD32ED31557B98B44E8CCBE8B7C444</string>
-				<string>E49AB549B6C9C86CA34BCF9CC21B646F</string>
+				<string>6A23D287E40F579BCB6DD2B860CFD5BD</string>
+				<string>351548B48C2435B3D6C360E6F2C3A407</string>
+				<string>FF1AC72C2251F64B72821B4D0E97675B</string>
+				<string>6989CF31CB7EA5AF968042407FBD809F</string>
+				<string>71B3CFBA67EA35DF2D0DBF267385C3F4</string>
+				<string>9ED5A8D47B15B245814070C6C899F020</string>
+				<string>C319839AE184B901049B666AD54190A6</string>
+				<string>3EF22C32D70EA6AAA49969E6236E1105</string>
+				<string>BABFD7B16EB4905BBE0E7B7B3D9121CC</string>
+				<string>9A09162093FAC74872E03FE10C77DCBA</string>
+				<string>502C94E5A8EBA6F9EFB82C96E7837530</string>
+				<string>1C6369EB26D74A8C39CC0B975CEF9041</string>
+				<string>00F91680BD921ED2CF56571AE1510EFF</string>
+				<string>B0BCFF56A9F1616DCBDD7E124789779D</string>
+				<string>C276C26BD2091D92D1530639C7E9AC5A</string>
+				<string>01DE2F596EF1EF733C656CEDF8181131</string>
+				<string>20BEAF33EDB9044B7BD3021E47CF2615</string>
+				<string>092989BBAEBD1D845F78E414B655D8E3</string>
+				<string>01DB87A22493E6C67E25F698B4E647DF</string>
+				<string>6141DF883CDBD9E72F264A6F6C44990B</string>
+				<string>2754C6B73183BF251FDE94917150FF6A</string>
+				<string>BE578DCAAE1172D674F68478EE459E0D</string>
+				<string>7F2FF31F59614A7213141689CE9D86EF</string>
+				<string>EDD5CBA8E6F8508452A107169F19DBBD</string>
+				<string>C75DD54DED115528981ECF39D43B0EB4</string>
+				<string>4953B15ADDFAF40970FF87F19128C190</string>
+				<string>4E787C1AD4324C0662193A3E2DB0F977</string>
+				<string>28A1CB550AB05AE19ED8A717685BDC53</string>
+				<string>0657F4DB578399D042DE3431F74B7EEB</string>
+				<string>EAA5E7966BEB021FE27D863972EF4985</string>
+				<string>1FBC41ED1AB4DEACDD50ABC9A1E89315</string>
+				<string>1DC7F1D532688BE9A9DC454B5AC9BA5C</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>MSWeakTimer</string>
+			<string>AVOSCloud</string>
 			<key>path</key>
-			<string>MSWeakTimer</string>
+			<string>AVOSCloud</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1920,36 +2259,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>A633F11A35B9883EB9E709F15B705840</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8D34C56A7FF7E838CD3ABD034CC3CFFC</string>
-				<string>33E7FC99B6B55566912D8E12EFBC5C07</string>
-				<string>1B224C8184AB195A6568AF05CED1465E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>JSAnimatedImagesView</string>
-			<key>path</key>
-			<string>JSAnimatedImagesView</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A68E4E906EA31DB54DB21AD66B3F6D4E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MSWeakTimer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>A6DE1EA9DB432B02DE518AA292F8F913</key>
 		<dict>
 			<key>explicitFileType</key>
@@ -1965,7 +2274,7 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>A7D4A9D3BA0E4FD293AB7E2C43EA1B88</key>
+		<key>A763AD792E604B0436B70C59DF3BB5D4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1974,16 +2283,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>AJWValidatorRemoteRule.m</string>
+			<string>AJWValidatorRule.m</string>
 			<key>path</key>
-			<string>AJWValidator/AJWValidatorRemoteRule.m</string>
+			<string>AJWValidator/AJWValidatorRule.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>AA9CCF3F14F8F15A24BEF450D9DA2143</key>
 		<dict>
 			<key>fileRef</key>
-			<string>73AD32ED31557B98B44E8CCBE8B7C444</string>
+			<string>0FBBECDAF50598B597E48B1FB4F9BBE9</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1991,6 +2300,21 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-DOS_OBJECT_USE_OBJC=0</string>
 			</dict>
+		</dict>
+		<key>AB93DD4DEE71AF215EB25CA28BB58F0D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.plug-in</string>
+			<key>name</key>
+			<string>RongCloud.bundle</string>
+			<key>path</key>
+			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/RongCloud.bundle</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>AF6F05C81ABB4C08DB56E42624547254</key>
 		<dict>
@@ -2009,6 +2333,19 @@
 			<string>6E7E5AF37923BFA48D6994B9BFC6535F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>B0BCFF56A9F1616DCBDD7E124789779D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVInstallation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>B3D1D13E0C6553800746CB8FD61CF946</key>
 		<dict>
@@ -2031,6 +2368,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>B3D5B2F4EAA9A9383E3575910493199C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AJWValidator+Private.h</string>
+			<key>path</key>
+			<string>AJWValidator/AJWValidator+Private.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>B530CF14247A98CD70FB32E379F7C311</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -2045,36 +2397,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>B6F8EA76921E891C7A1E08F68696C3DE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D8656D8BAE859E7C8B8FC96D2CBA02CB</string>
-				<string>25B3787074ACF8F28982F1873715CF62</string>
-				<string>1076ABD18E008C46BA463FFCC0DCD210</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>KxMenu</string>
-			<key>path</key>
-			<string>KxMenu</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B977C86B18D4B12322FCBAC007EA0C57</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>JSAnimatedImagesView-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>B9A4CB57B0E3F794844F2CA25A042B23</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -2087,6 +2409,36 @@
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>BA09DD920DD443B2CE56F8209C40529C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AJWValidator.h</string>
+			<key>path</key>
+			<string>AJWValidator/AJWValidator.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA1BF19BE37EB442B5EAE1EA53C57CD1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AJWValidatorCustomRule.m</string>
+			<key>path</key>
+			<string>AJWValidator/AJWValidatorCustomRule.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
 		<dict>
@@ -2104,6 +2456,19 @@
 			<string>SOURCE_ROOT</string>
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BABFD7B16EB4905BBE0E7B7B3D9121CC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVFileQuery.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>BB658585BF9CF06C3CC471ECC82B9D08</key>
 		<dict>
@@ -2133,7 +2498,7 @@
 		<key>BB8A04CCD16100977FDBEBE9BE790E66</key>
 		<dict>
 			<key>fileRef</key>
-			<string>71505BDB55C9E3FB94A95EA02495B7CA</string>
+			<string>05F7ECCD0C7D7D72B7488DFC5FD02FCD</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2144,40 +2509,64 @@
 				</array>
 			</dict>
 		</dict>
-		<key>BF481BE162A4ACECFFFA942C1C295489</key>
+		<key>BC6C7E24662DC576426EEAFCCAE039D3</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>E7F134D6BE4873AA1F5448BAF9620F4C</string>
-				<string>A633F11A35B9883EB9E709F15B705840</string>
-				<string>B6F8EA76921E891C7A1E08F68696C3DE</string>
-				<string>A532A3C3CDD18C2F7C8806B47F87F5C5</string>
-				<string>27EF7409B4C7E45EBB9CFC11E11AE8B1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C055FDEE555F1019DCC5CD1DFA31D425</key>
-		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>RongIMLib.framework</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/RongIMLib.framework</string>
+			<string>AJWValidator-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BCCAE01F6C159E8D7BCB3466D2476C79</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>path</key>
+			<string>libAVOSCloud.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BE578DCAAE1172D674F68478EE459E0D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVRelation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C13BCBDA68A213789D8FDAC663540AFB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>UIView+AJWValidator.h</string>
+			<key>path</key>
+			<string>AJWValidator/UIView+AJWValidator.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C186DCB603FC44D692733165F80A682E</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>62896923CADB7D914A2E3A1681C54B28</string>
+			<string>F9D25A475143908C205AAB864399A781</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -2208,40 +2597,10 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>C19D8F38F9F9E74B0B771AEEFD7332B9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
-			<key>name</key>
-			<string>RongCloud.bundle</string>
-			<key>path</key>
-			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/RongCloud.bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C20472128084C34B494B810D0B378867</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AJWValidator.h</string>
-			<key>path</key>
-			<string>AJWValidator/AJWValidator.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>C273E16FB644C6C0829294309F95AF39</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>728DBF0975940C653ED40B6D9B692535</string>
+			<string>2DBB8B0E1DBBA3DC0133A0225F1D76F8</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -2272,6 +2631,32 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>C276C26BD2091D92D1530639C7E9AC5A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVLogger.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C319839AE184B901049B666AD54190A6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVConstants.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>C3B7BDF5CE5CB8F095FE12DA55D9A9BB</key>
 		<dict>
 			<key>isa</key>
@@ -2288,9 +2673,22 @@
 		<key>C6AA535169554E684E490F72716651C9</key>
 		<dict>
 			<key>fileRef</key>
-			<string>608CD1ED9200FAF6B67E0C96252C4C1E</string>
+			<string>BA1BF19BE37EB442B5EAE1EA53C57CD1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>C75DD54DED115528981ECF39D43B0EB4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVSearchQuery.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C7A151DC5F5D3C5431B92989B4CE1CB1</key>
 		<dict>
@@ -2304,6 +2702,23 @@
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>C7F839063C513D84D6988937AE0B3CED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>134C9F0BCD74BAB8079384A9382F4A4B</string>
+				<string>881348D563428E9B738A2B2CC001BC1C</string>
+				<string>702270726E6A88196D3B16AEA9EC2F74</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/MSWeakTimer</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C88FAF3B4D73847D7B4CE1B8090C578E</key>
 		<dict>
@@ -2321,7 +2736,7 @@
 		<key>CEE504C14AB94E5FCAD4DD9AABB3B1F2</key>
 		<dict>
 			<key>fileRef</key>
-			<string>41681D6C04345774806230DC9240E476</string>
+			<string>A3B9B794E8917F28E2CC97C780C3ABE3</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2336,7 +2751,7 @@
 			<key>targetProxy</key>
 			<string>91D48490989F2BAB878E943A17604746</string>
 		</dict>
-		<key>D2913C326316AD9011E54C8985A79E57</key>
+		<key>D051D3E05121888FB278031191968838</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2345,7 +2760,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>MSWeakTimer-prefix.pch</string>
+			<string>JSAnimatedImagesView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D2D40D7CC85A271C07B125B81BD933DD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AJWValidator-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2391,25 +2819,10 @@
 				<string>6073AE8FE2CABF993C099DF78C4F4D4D</string>
 			</array>
 		</dict>
-		<key>D448F73B5C327084EB39B7EE0D843CEF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AJWValidatorRangeRule.h</string>
-			<key>path</key>
-			<string>AJWValidator/AJWValidatorRangeRule.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>D734CFC1470ED60F5142B1D669A782DC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>8D34C56A7FF7E838CD3ABD034CC3CFFC</string>
+			<string>D051D3E05121888FB278031191968838</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2420,7 +2833,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>D8656D8BAE859E7C8B8FC96D2CBA02CB</key>
+		<key>DD97A8AD67545DB42827659CA5FAD743</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2428,62 +2841,15 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>KxMenu.h</string>
 			<key>path</key>
-			<string>Source/KxMenu.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA1D5423D453A3C2A69B3BA5F0F3965A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AJWValidatorRemoteRule.h</string>
-			<key>path</key>
-			<string>AJWValidator/AJWValidatorRemoteRule.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DE706D52763B8DB7188A4B9EFF8FC1B8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>name</key>
-			<string>libopencore-amrnb.a</string>
-			<key>path</key>
-			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/libopencore-amrnb.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E12D7A3557413618BE4FC21B7103569F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIView+AJWValidator.m</string>
-			<key>path</key>
-			<string>AJWValidator/UIView+AJWValidator.m</string>
+			<string>KxMenu-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>E2E12438A8DC9C4FEF0D422AFD422E44</key>
 		<dict>
 			<key>fileRef</key>
-			<string>2EB44F861D1AEFEB985E8FC44220ADCC</string>
+			<string>B3D5B2F4EAA9A9383E3575910493199C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2497,7 +2863,7 @@
 		<key>E31C1A29A033CFD18BF31CA359C9CA56</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D8656D8BAE859E7C8B8FC96D2CBA02CB</string>
+			<string>585F8F0BFC5D66F1A090C1EB59DDF4F0</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2508,20 +2874,18 @@
 				</array>
 			</dict>
 		</dict>
-		<key>E49AB549B6C9C86CA34BCF9CC21B646F</key>
+		<key>E58F6CF8F47A61EA32ACA5D17CA871B7</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>0453BD45AE0106261A3D0B967C97D361</string>
-				<string>7CC20DD63128A1A27192011CFCF7DD0F</string>
-				<string>D2913C326316AD9011E54C8985A79E57</string>
+				<string>32C7F67406FA4D1C56ADB35F3AAE4A51</string>
+				<string>F777CA4F6976DD2D9403805A061BB0C1</string>
+				<string>766F39ADCB39C4A8A71C4BB55D68E2D6</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/MSWeakTimer</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2549,44 +2913,6 @@
 			<key>targetProxy</key>
 			<string>0CD781AE6A4E3AF939B1EBBDB4B8427C</string>
 		</dict>
-		<key>E7F134D6BE4873AA1F5448BAF9620F4C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>579888E87B651DD529E8725744405004</string>
-				<string>5149CCCA056C7B0B74990AE4F003FDCF</string>
-				<string>75DE27B2872981DCF94E433CD4B3C9E5</string>
-				<string>5301FF0B6B51AF21FCB056E4ED3E234B</string>
-				<string>C20472128084C34B494B810D0B378867</string>
-				<string>83D60CB5B84D4F9E4BF1B3DE3CB99733</string>
-				<string>2EB44F861D1AEFEB985E8FC44220ADCC</string>
-				<string>71505BDB55C9E3FB94A95EA02495B7CA</string>
-				<string>608CD1ED9200FAF6B67E0C96252C4C1E</string>
-				<string>1B528251E9C4C5AE144B65A8683F2D34</string>
-				<string>41681D6C04345774806230DC9240E476</string>
-				<string>D448F73B5C327084EB39B7EE0D843CEF</string>
-				<string>98EA78A99ED69E9A1102907123A053BA</string>
-				<string>45484B7C08CE077A2D8425D0E5EA0BB5</string>
-				<string>FCC1351C09999D794AB9F1BC42CBDD93</string>
-				<string>DA1D5423D453A3C2A69B3BA5F0F3965A</string>
-				<string>A7D4A9D3BA0E4FD293AB7E2C43EA1B88</string>
-				<string>5DAF90A8002C89C7EF2B2B887B0DAEB9</string>
-				<string>9708564A28FE2CA83FAB5AE17C4370AB</string>
-				<string>0934244BAAD1BC6E53020BBC35962D66</string>
-				<string>65DA7CB7961348C388F68D430CEA16D5</string>
-				<string>946210E21F7F7B88C516A67B0459CDD9</string>
-				<string>E12D7A3557413618BE4FC21B7103569F</string>
-				<string>889C30B90A30B48D24269AB51C126EA2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AJWValidator</string>
-			<key>path</key>
-			<string>AJWValidator</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>E84FB2FBD86C04A7828A525A39EF56E1</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -2601,7 +2927,7 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>EA960A458E31FA0A9A24AEBB7C3FBD57</key>
+		<key>E85DD61840ED7AB36A16945E1A18A6E7</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2609,34 +2935,64 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>KxMenu.m</string>
 			<key>path</key>
-			<string>AJWValidator-dummy.m</string>
+			<string>Source/KxMenu.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E9775796722B251B33E9D276CDED2047</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AJWValidatorRangeRule.h</string>
+			<key>path</key>
+			<string>AJWValidator/AJWValidatorRangeRule.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EAA5E7966BEB021FE27D863972EF4985</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVSubclassing.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>EC240BBB120F234968DEBAFEFC52F839</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A7D4A9D3BA0E4FD293AB7E2C43EA1B88</string>
+			<string>5A29547C30982D6DAA4300F45B19A3A4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>F099327F2CCE03549AAD51B65A2050F9</key>
+		<key>ECF8A8D5B99B4D3DA47541300B23A694</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Emoji.plist</string>
+			<string>AJWStringValidator.h</string>
 			<key>path</key>
-			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/Emoji.plist</string>
+			<string>AJWValidator/AJWStringValidator.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FCC1351C09999D794AB9F1BC42CBDD93</key>
+		<key>ED73C92E322AD567DFE522B49078951E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2645,9 +3001,116 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>AJWValidatorRegularExpressionRule.m</string>
+			<string>UIView+AJWValidator.m</string>
 			<key>path</key>
-			<string>AJWValidator/AJWValidatorRegularExpressionRule.m</string>
+			<string>AJWValidator/UIView+AJWValidator.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EDD5CBA8E6F8508452A107169F19DBBD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVSaveOption.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EF662C80913C995FDD6087F36056C77D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AJWValidator.m</string>
+			<key>path</key>
+			<string>AJWValidator/AJWValidator.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F16D3ED3E8F781A869D85BF6358B415F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AJWNumericValidator.h</string>
+			<key>path</key>
+			<string>AJWValidator/AJWNumericValidator.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F777CA4F6976DD2D9403805A061BB0C1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>RongIMKit.framework</string>
+			<key>path</key>
+			<string>Rong_Cloud_iOS_IMKit_SDK_v2_5_0_stable/RongIMKit.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F980D0D9F22F1E3E93F9252066FA9105</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F16D3ED3E8F781A869D85BF6358B415F</string>
+				<string>3445B4F69341C015704EDD20B6DC1F40</string>
+				<string>ECF8A8D5B99B4D3DA47541300B23A694</string>
+				<string>29880A86052E71066BF1D4952A8A7BC4</string>
+				<string>BA09DD920DD443B2CE56F8209C40529C</string>
+				<string>EF662C80913C995FDD6087F36056C77D</string>
+				<string>B3D5B2F4EAA9A9383E3575910493199C</string>
+				<string>05F7ECCD0C7D7D72B7488DFC5FD02FCD</string>
+				<string>BA1BF19BE37EB442B5EAE1EA53C57CD1</string>
+				<string>3B797F120AD0B47FA6C1555E434A6F5B</string>
+				<string>A3B9B794E8917F28E2CC97C780C3ABE3</string>
+				<string>E9775796722B251B33E9D276CDED2047</string>
+				<string>8A7AB3316357C38DB7288572B9B4F4BE</string>
+				<string>8C4CBBEE49AE2C095A1F59F11412BA26</string>
+				<string>5524D6966BFCD64040C605B86ED1892D</string>
+				<string>7EC4A3C847A9B0A5BCC61388B6813024</string>
+				<string>5A29547C30982D6DAA4300F45B19A3A4</string>
+				<string>15FCD09D6A5053CD350202A1CA357A9B</string>
+				<string>02B7C5AC447987F824E2AC002DFADB31</string>
+				<string>9D6FE028B8C1E75643EC11D0728C3810</string>
+				<string>A763AD792E604B0436B70C59DF3BB5D4</string>
+				<string>C13BCBDA68A213789D8FDAC663540AFB</string>
+				<string>ED73C92E322AD567DFE522B49078951E</string>
+				<string>3103E54E9BA2C90CC7EE8D2D0E983B5B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>AJWValidator</string>
+			<key>path</key>
+			<string>AJWValidator</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F9D25A475143908C205AAB864399A781</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>KxMenu.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2671,9 +3134,22 @@
 		<key>FE1A10F156070BD12DC4B7B06F496C22</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5149CCCA056C7B0B74990AE4F003FDCF</string>
+			<string>3445B4F69341C015704EDD20B6DC1F40</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF1AC72C2251F64B72821B4D0E97675B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVAnonymousUtils.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

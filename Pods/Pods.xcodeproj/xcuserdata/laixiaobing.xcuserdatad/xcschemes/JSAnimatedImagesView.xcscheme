@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8EEA9FE97C5FE2DE68ED5598'
+               BlueprintIdentifier = '4FD990D2D8C7ADF9F63F3DD8'
                BlueprintName = 'JSAnimatedImagesView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libJSAnimatedImagesView.a'>

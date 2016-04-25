@@ -12,6 +12,7 @@
 		1A017CB41CC91BD0007F3E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A017CB31CC91BD0007F3E6E /* Assets.xcassets */; };
 		1A017CB71CC91BD0007F3E6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A017CB51CC91BD0007F3E6E /* LaunchScreen.storyboard */; };
 		1A017CBF1CC91C49007F3E6E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1A017CBE1CC91C49007F3E6E /* Podfile */; };
+		1AFB3A9D1CCE067100F14407 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB3A9C1CCE067100F14407 /* Functions.swift */; };
 		1AFBFCCF1CCA378A00842AA8 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBFCCE1CCA378A00842AA8 /* ConversationViewController.swift */; };
 		1AFBFCD11CCA4E0F00842AA8 /* ConversationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBFCD01CCA4E0F00842AA8 /* ConversationTableViewController.swift */; };
 		1AFBFCD41CCA5D0100842AA8 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBFCD21CCA5D0100842AA8 /* About.storyboard */; };
@@ -37,6 +38,7 @@
 		1A017CB81CC91BD0007F3E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A017CBE1CC91C49007F3E6E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1A017CC01CC91DE7007F3E6E /* 小微信-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "小微信-Bridging-Header.h"; sourceTree = "<group>"; };
+		1AFB3A9C1CCE067100F14407 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		1AFBFCCE1CCA378A00842AA8 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		1AFBFCD01CCA4E0F00842AA8 /* ConversationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationTableViewController.swift; sourceTree = "<group>"; };
 		1AFBFCD31CCA5D0100842AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/About.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				1AFD58661CCB1AF30053533E /* LoginViewController.swift */,
 				1AFD58681CCB1E3A0053533E /* HeaderImageView.swift */,
 				1AFF85851CCCFABF00C4CC47 /* RegTableViewController.swift */,
+				1AFB3A9C1CCE067100F14407 /* Functions.swift */,
 			);
 			path = "小微信";
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				1AFD58691CCB1E3A0053533E /* HeaderImageView.swift in Sources */,
 				1AFF85931CCD03C300C4CC47 /* TextBox.swift in Sources */,
 				1AFD58671CCB1AF30053533E /* LoginViewController.swift in Sources */,
+				1AFB3A9D1CCE067100F14407 /* Functions.swift in Sources */,
 				1AFF858F1CCCFF2F00C4CC47 /* RCAnimatedImagesView.m in Sources */,
 				1A017CAD1CC91BD0007F3E6E /* AppDelegate.swift in Sources */,
 				1AFBFCCF1CCA378A00842AA8 /* ConversationViewController.swift in Sources */,

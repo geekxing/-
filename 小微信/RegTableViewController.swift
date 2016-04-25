@@ -17,14 +17,50 @@ class RegTableViewController: UITableViewController {
     @IBOutlet weak var user: UITextBox!
     @IBOutlet weak var pass: UITextBox!
     @IBOutlet weak var mail: UITextBox!
+    @IBOutlet weak var mobile: UITextBox!
+    @IBOutlet weak var ques: UITextBox!
+    @IBOutlet weak var answer: UITextBox!
     
     @IBAction func done(sender: AnyObject) {
-        checkRequired()
+        self.view.userInteractionEnabled = false
+        checkRegister()
     }
     
-    func checkRequired() {
-        self.view.userInteractionEnabled = false
-        self.successNotice("注册成功！")
+    func checkRegister() {
+        self.pleaseWait()
+        //建立对象
+        let regdata = AVObject(className: "XBUser")
+        //插入数据
+        regdata.setObject(user.text, forKey: "user")
+        regdata.setObject(pass.text, forKey: "pass")
+        regdata.setObject(mail.text, forKey: "mail")
+        regdata.setObject(mobile.text, forKey: "mobile")
+        regdata.setObject(ques.text, forKey: "question")
+        regdata.setObject(answer.text, forKey: "answer")
+        //查询用户名是否已被注册
+        let query = AVQuery(className: "XBUser")
+        query.whereKey("user", equalTo: user.text)
+        query.getFirstObjectInBackgroundWithBlock { (user, error) in
+            if user != nil {
+                self.clearAllNotice()
+                self.errorNotice("已使用的用户名")
+                self.view.userInteractionEnabled = true
+                self.user.becomeFirstResponder()
+                self.doneButton.enabled = false
+            } else {
+                regdata.saveInBackgroundWithBlock({ (_, error) in
+                    if error == nil {
+                        self.clearAllNotice()
+                        self.successNotice("注册成功")
+                        afterDelay(1.1, closure: {
+                            self.navigationController?.popViewControllerAnimated(true)
+                        })
+                    } else {
+                        print(error)
+                    }
+                })
+            }
+        }
     }
     
     override func viewDidLoad() {
