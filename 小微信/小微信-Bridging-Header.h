@@ -8,3 +8,4 @@
 #import "RCAnimatedImagesView.h"
 #import <AJWValidator/AJWValidator.h>
 #import <AVOSCloud/AVOSCloud.h>
+#import <UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell.h>

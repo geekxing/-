@@ -11,26 +11,53 @@ import UIKit
 class ConversationTableViewController: RCConversationListViewController {
     
     let conVC = ConversationViewController()
+    var friendVC = FriendViewController()
+    var leftBarButton: UIBarButtonItem!
+    var popMenu: PopoverViewController?
+    weak var popController: UIPopoverPresentationController?
     
     @IBAction func showMenu(sender: UIBarButtonItem) {
         var frame = sender.valueForKey("view")?.frame
         frame?.origin.y += 30
-        KxMenu.showMenuInView(self.view , fromRect: frame!, menuItems: [
-            KxMenuItem.init("客服", image: nil, target: self, action: #selector(didTapMenu1)),
-            KxMenuItem.init("好友", image: nil, target: self, action: #selector(didTapMenu2))
-            ])
+        if (popController == nil) {
+//            KxMenu.showMenuInView(self.view , fromRect: frame!, menuItems: [
+//                KxMenuItem.init("客服", image: nil, target: self, action: #selector(didTapMenu1)),
+//                KxMenuItem.init("好友", image: nil, target: self, action: #selector(didTapMenu2))
+//                ])
+            
+            let popItem1 = PopViewItem(menu: "朋友圈", image: UIImage(named: "IconHome"))
+            let popItem2 = PopViewItem(menu: "好友", image: UIImage(named: "IconProfile"))
+            let popItem3 = PopViewItem(menu: "扫一扫", image: nil)
+            let pops = [popItem1,popItem2,popItem3]
+            let popMenu = PopoverViewController()
+            popMenu.popViewItems = pops
+            popMenu.modalPresentationStyle = .Popover
+            popMenu.preferredContentSize = CGSizeMake(130, CGFloat(pops.count * 36))
+            popController = popMenu.popoverPresentationController
+            popController?.delegate = self
+            popController?.permittedArrowDirections = .Up
+            popController?.barButtonItem = navigationItem.rightBarButtonItem
+            presentViewController(popMenu, animated: true, completion: nil)
+        }
     }
     
     func didTapMenu1() {
         print("进入客服")
     }
     
-    func didTapMenu2() {
-        conVC.targetId = "laixiaobing"
-        conVC.conversationType = RCConversationType.ConversationType_PRIVATE
-        conVC.title = "Larry"
-        
-        self.performSegueWithIdentifier("TaponCell", sender: self)
+    func didTapMenu(notification: NSNotification) {
+        let indexPath = notification.object as! NSIndexPath
+        print("\(indexPath)")
+        switch indexPath.row {
+        case 0:
+            performSegueWithIdentifier("FriendCircle", sender: nil)
+        case 1:
+            performSegueWithIdentifier("TaponCell", sender: nil)
+        default: break
+        }
+        if popMenu != nil {
+            popMenu!.dismissViewControllerAnimated(true) {self.popMenu = nil;self.popController = nil}
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -59,8 +86,9 @@ class ConversationTableViewController: RCConversationListViewController {
         leftImageItemView.layer.masksToBounds = true
         leftImageItemView.image = image
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftImageItemView)
-        let leftBarButton = navigationItem.leftBarButtonItem
-        leftBarButton?.action = #selector(transtoSideBar)
+        leftBarButton = navigationItem.leftBarButtonItem
+        leftBarButton.action = #selector(transtoSideBar)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(didTapMenu), name: "click", object: nil)
     }
     
     func transtoSideBar() {
@@ -73,10 +101,15 @@ class ConversationTableViewController: RCConversationListViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let chatVC = segue.destinationViewController as! RCConversationViewController
-        chatVC.targetId = conVC.targetId
-        chatVC.conversationType = conVC.conversationType
-        chatVC.title = conVC.title
+        if segue.identifier == "TaponCell" {
+            let chatVC = segue.destinationViewController as! RCConversationViewController
+            chatVC.targetId = conVC.targetId
+            chatVC.conversationType = conVC.conversationType
+            chatVC.title = conVC.title
+        }
+        if segue.identifier == "FriendCircle" {
+            friendVC = segue.destinationViewController as! FriendViewController
+        }
         
         self.tabBarController?.tabBar.hidden = true
     }
@@ -97,4 +130,10 @@ class ConversationTableViewController: RCConversationListViewController {
 //        tableView.deselectRowAtIndexPath(indexPath, animated: true)
 //    }
 
+}
+
+extension ConversationTableViewController: UIPopoverPresentationControllerDelegate {
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .None
+    }
 }

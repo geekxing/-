@@ -10,7 +10,10 @@ import UIKit
 
 class ConversationViewController: RCConversationViewController {
     
-
+    deinit {
+        print("退出会话界面")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

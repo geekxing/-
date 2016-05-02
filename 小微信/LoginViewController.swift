@@ -58,11 +58,14 @@ class LoginViewController: UIViewController, RCAnimatedImagesViewDelegate {
         }
     }
     
+    override func viewWillAppear(animated: Bool) {
+        navigationController?.navigationBarHidden = true
+    }
+    
     override func viewDidAppear(animated: Bool) {
         UIView.animateWithDuration(1) {
             self.loginStackView.axis = UILayoutConstraintAxis.Vertical
         }
-        navigationController?.navigationBarHidden = true
     }
     
     
@@ -71,6 +74,15 @@ class LoginViewController: UIViewController, RCAnimatedImagesViewDelegate {
         self.wallPaperView.delegate = self
         navigationController?.navigationBarHidden = true
         self.wallPaperView.startAnimating()
+        
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        gestureRecognizer
+    }
+    
+    func hideKeyboard(gestureRecognizer: UITapGestureRecognizer) {
+        let point = gestureRecognizer.locationInView(self.view)
+        user.resignFirstResponder()
+        pass.resignFirstResponder()
     }
     
     override func didReceiveMemoryWarning() {

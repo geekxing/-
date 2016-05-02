@@ -29,6 +29,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RESideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UITableView+FDTemplateLayoutCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -37,7 +47,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6073AE8FE2CABF993C099DF78C4F4D4D</key>
+		<key>59E0182D67057B6E1F76D33CA6D47AAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6577CC2B3B7CDEED426E8C1E59693854</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +68,11 @@
 			<true/>
 		</dict>
 		<key>BB658585BF9CF06C3CC471ECC82B9D08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F31F0F2109993FE53703799462205836</key>
 		<dict>
 			<key>primary</key>
 			<true/>

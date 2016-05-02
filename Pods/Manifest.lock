@@ -5,14 +5,18 @@ PODS:
     - MSWeakTimer (~> 1.0)
   - KxMenu (1)
   - MSWeakTimer (1.1.0)
+  - RESideMenu (4.0.7)
   - RongCloudIMKit (2.5.0)
+  - UITableView+FDTemplateLayoutCell (1.4)
 
 DEPENDENCIES:
   - AJWValidator
   - AVOSCloud
   - JSAnimatedImagesView
   - KxMenu
+  - RESideMenu
   - RongCloudIMKit (= 2.5.0)
+  - UITableView+FDTemplateLayoutCell
 
 SPEC CHECKSUMS:
   AJWValidator: ed00557b9cdcc38a8216aa9ddbd76b4eadb73615
@@ -20,6 +24,8 @@ SPEC CHECKSUMS:
   JSAnimatedImagesView: d5c5f561280171ce13f1f08ba9834c47a1f27bfc
   KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72
   MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
+  RESideMenu: f24c508404b49c667344c54aba7e590883533958
   RongCloudIMKit: 3d8473f022c7588db80ef81caf0208e5c2fa4789
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 
 COCOAPODS: 0.39.0
