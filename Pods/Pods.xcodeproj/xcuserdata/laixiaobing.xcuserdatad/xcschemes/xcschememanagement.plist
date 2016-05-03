@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MSWeakTimer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,17 +47,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2A8F5DCAEB0A8C3903B807D8815F5E5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4B2E2DFEAB9164C3966D663E68547E9C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>59E0182D67057B6E1F76D33CA6D47AAB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6577CC2B3B7CDEED426E8C1E59693854</key>
+		<key>4EB0627A16714393619B964A5F6CB1E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8F74D9EA91F4C43190670066BAC37D44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BB658585BF9CF06C3CC471ECC82B9D08</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F31F0F2109993FE53703799462205836</key>
+		<key>CC69EC944D4BAB26D4403617733F13C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -27,33 +27,11 @@
                     </navigationItem>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="TaponCell" id="RNd-i0-0Ey"/>
-                        <segue destination="5kO-hd-KiY" kind="show" identifier="FriendCircle" id="VJ0-v1-eyO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RmM-XT-SDW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1740" y="124"/>
-        </scene>
-        <!--朋友圈-->
-        <scene sceneID="kA4-EH-hbf">
-            <objects>
-                <tableViewController id="5kO-hd-KiY" customClass="FriendViewController" customModule="小微信" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="28" sectionFooterHeight="28" id="k6D-sz-vIN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="5kO-hd-KiY" id="LSK-5d-bQf"/>
-                            <outlet property="delegate" destination="5kO-hd-KiY" id="K14-bb-7RY"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="朋友圈" id="LrL-Xv-CP2">
-                        <barButtonItem key="rightBarButtonItem" image="IconProfile" id="p4q-8v-fDt"/>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t0J-am-We0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1740" y="887"/>
         </scene>
         <!--与好友聊天中...-->
         <scene sceneID="tne-QT-ifu">
@@ -95,8 +73,5 @@
             <point key="canvasLocation" x="920" y="124"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="IconProfile" width="32" height="32"/>
-    </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

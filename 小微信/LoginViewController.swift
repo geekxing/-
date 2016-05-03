@@ -13,6 +13,7 @@ class LoginViewController: UIViewController, RCAnimatedImagesViewDelegate {
     
     @IBOutlet weak var loginStackView: UIStackView!
     
+    @IBOutlet weak var headImageView: HeaderImageView!
     @IBOutlet weak var user: UITextField!
     @IBOutlet weak var pass: UITextField!
     @IBOutlet weak var wallPaperView: RCAnimatedImagesView!
@@ -74,6 +75,7 @@ class LoginViewController: UIViewController, RCAnimatedImagesViewDelegate {
         self.wallPaperView.delegate = self
         navigationController?.navigationBarHidden = true
         self.wallPaperView.startAnimating()
+        headImageView.image = UIImage(named: "head1")
         
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         gestureRecognizer

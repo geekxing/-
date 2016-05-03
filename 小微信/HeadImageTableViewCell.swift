@@ -11,13 +11,10 @@ import UIKit
 class HeadImageTableViewCell: UITableViewCell {
 
     @IBOutlet weak var bigImageView: UIImageView!
-    @IBOutlet weak var headImageView: UIImageView!
-    @IBOutlet weak var label: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        headImageView.layer.borderWidth = 0.5
-        headImageView.layer.borderColor = UIColor.blueColor().CGColor
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

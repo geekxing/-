@@ -16,6 +16,8 @@
 		1A51B8231CCFD72F000E4768 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B8221CCFD72F000E4768 /* FriendViewController.swift */; };
 		1A51B8251CCFD9FD000E4768 /* HeadImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A51B8241CCFD9FD000E4768 /* HeadImageCell.xib */; };
 		1A51B8271CCFDB59000E4768 /* HeadImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B8261CCFDB59000E4768 /* HeadImageTableViewCell.swift */; };
+		1A808B141CD7A0BE0050145F /* MyCircleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A808B131CD7A0BE0050145F /* MyCircleTableViewController.swift */; };
+		1A808B3F1CD906220050145F /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A808B3D1CD906220050145F /* Me.storyboard */; };
 		1A9C61C31CD630A9003D2C76 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C61C21CD630A9003D2C76 /* FriendCell.xib */; };
 		1A9C61C51CD6366C003D2C76 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C61C41CD6366C003D2C76 /* FriendTableViewCell.swift */; };
 		1A9C61C91CD6494D003D2C76 /* JSONResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C61C81CD6494D003D2C76 /* JSONResult.swift */; };
@@ -24,9 +26,8 @@
 		1AFB3A9D1CCE067100F14407 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB3A9C1CCE067100F14407 /* Functions.swift */; };
 		1AFBFCCF1CCA378A00842AA8 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBFCCE1CCA378A00842AA8 /* ConversationViewController.swift */; };
 		1AFBFCD11CCA4E0F00842AA8 /* ConversationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBFCD01CCA4E0F00842AA8 /* ConversationTableViewController.swift */; };
-		1AFBFCD41CCA5D0100842AA8 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBFCD21CCA5D0100842AA8 /* About.storyboard */; };
-		1AFBFCD61CCA5D3000842AA8 /* Server.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBFCD51CCA5D3000842AA8 /* Server.storyboard */; };
-		1AFBFCD91CCA5D4300842AA8 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBFCD71CCA5D4300842AA8 /* Contacts.storyboard */; };
+		1AFBFCD61CCA5D3000842AA8 /* School.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBFCD51CCA5D3000842AA8 /* School.storyboard */; };
+		1AFBFCD91CCA5D4300842AA8 /* Share.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBFCD71CCA5D4300842AA8 /* Share.storyboard */; };
 		1AFBFCDB1CCA5D5A00842AA8 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBFCDA1CCA5D5A00842AA8 /* Chat.storyboard */; };
 		1AFD58671CCB1AF30053533E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD58661CCB1AF30053533E /* LoginViewController.swift */; };
 		1AFD58691CCB1E3A0053533E /* HeaderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFD58681CCB1E3A0053533E /* HeaderImageView.swift */; };
@@ -52,6 +53,8 @@
 		1A51B8221CCFD72F000E4768 /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		1A51B8241CCFD9FD000E4768 /* HeadImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadImageCell.xib; sourceTree = "<group>"; };
 		1A51B8261CCFDB59000E4768 /* HeadImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadImageTableViewCell.swift; sourceTree = "<group>"; };
+		1A808B131CD7A0BE0050145F /* MyCircleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCircleTableViewController.swift; sourceTree = "<group>"; };
+		1A808B3E1CD906220050145F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Me.storyboard; sourceTree = "<group>"; };
 		1A9C61C21CD630A9003D2C76 /* FriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
 		1A9C61C41CD6366C003D2C76 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		1A9C61C81CD6494D003D2C76 /* JSONResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONResult.swift; sourceTree = "<group>"; };
@@ -60,9 +63,8 @@
 		1AFB3A9C1CCE067100F14407 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		1AFBFCCE1CCA378A00842AA8 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		1AFBFCD01CCA4E0F00842AA8 /* ConversationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationTableViewController.swift; sourceTree = "<group>"; };
-		1AFBFCD31CCA5D0100842AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/About.storyboard; sourceTree = "<group>"; };
-		1AFBFCD51CCA5D3000842AA8 /* Server.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Server.storyboard; sourceTree = "<group>"; };
-		1AFBFCD81CCA5D4300842AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Contacts.storyboard; sourceTree = "<group>"; };
+		1AFBFCD51CCA5D3000842AA8 /* School.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = School.storyboard; sourceTree = "<group>"; };
+		1AFBFCD81CCA5D4300842AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Share.storyboard; sourceTree = "<group>"; };
 		1AFBFCDA1CCA5D5A00842AA8 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		1AFD58661CCB1AF30053533E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1AFD58681CCB1E3A0053533E /* HeaderImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderImageView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				1AFF85871CCCFEA800C4CC47 /* 3rd */,
 				1A017CC01CC91DE7007F3E6E /* 小微信-Bridging-Header.h */,
+				1A808B131CD7A0BE0050145F /* MyCircleTableViewController.swift */,
 				1A017CB81CC91BD0007F3E6E /* Info.plist */,
 				1A017CAC1CC91BD0007F3E6E /* AppDelegate.swift */,
 				1AFBFCD01CCA4E0F00842AA8 /* ConversationTableViewController.swift */,
@@ -121,11 +124,11 @@
 				1A017CB31CC91BD0007F3E6E /* Assets.xcassets */,
 				1A017CB51CC91BD0007F3E6E /* LaunchScreen.storyboard */,
 				1A017CB01CC91BD0007F3E6E /* Main.storyboard */,
+				1A808B3D1CD906220050145F /* Me.storyboard */,
 				1AFF85821CCCFA6C00C4CC47 /* Login.storyboard */,
 				1AFBFCDA1CCA5D5A00842AA8 /* Chat.storyboard */,
-				1AFBFCD71CCA5D4300842AA8 /* Contacts.storyboard */,
-				1AFBFCD51CCA5D3000842AA8 /* Server.storyboard */,
-				1AFBFCD21CCA5D0100842AA8 /* About.storyboard */,
+				1AFBFCD71CCA5D4300842AA8 /* Share.storyboard */,
+				1AFBFCD51CCA5D3000842AA8 /* School.storyboard */,
 				1AFD58661CCB1AF30053533E /* LoginViewController.swift */,
 				1AFD58681CCB1E3A0053533E /* HeaderImageView.swift */,
 				1AFF85851CCCFABF00C4CC47 /* RegTableViewController.swift */,
@@ -235,16 +238,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A017CB71CC91BD0007F3E6E /* LaunchScreen.storyboard in Resources */,
-				1AFBFCD41CCA5D0100842AA8 /* About.storyboard in Resources */,
 				1A017CB41CC91BD0007F3E6E /* Assets.xcassets in Resources */,
+				1A808B3F1CD906220050145F /* Me.storyboard in Resources */,
 				1A017CBF1CC91C49007F3E6E /* Podfile in Resources */,
 				1A017CB21CC91BD0007F3E6E /* Main.storyboard in Resources */,
 				1A9C61C31CD630A9003D2C76 /* FriendCell.xib in Resources */,
 				1A51B8251CCFD9FD000E4768 /* HeadImageCell.xib in Resources */,
 				1A9C61CD1CD657CF003D2C76 /* data.json in Resources */,
-				1AFBFCD91CCA5D4300842AA8 /* Contacts.storyboard in Resources */,
+				1AFBFCD91CCA5D4300842AA8 /* Share.storyboard in Resources */,
 				1AFBFCDB1CCA5D5A00842AA8 /* Chat.storyboard in Resources */,
-				1AFBFCD61CCA5D3000842AA8 /* Server.storyboard in Resources */,
+				1AFBFCD61CCA5D3000842AA8 /* School.storyboard in Resources */,
 				1AFF85841CCCFA6C00C4CC47 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +312,7 @@
 				1A51B8231CCFD72F000E4768 /* FriendViewController.swift in Sources */,
 				1AFF85931CCD03C300C4CC47 /* TextBox.swift in Sources */,
 				1AFD58671CCB1AF30053533E /* LoginViewController.swift in Sources */,
+				1A808B141CD7A0BE0050145F /* MyCircleTableViewController.swift in Sources */,
 				1A9C61C91CD6494D003D2C76 /* JSONResult.swift in Sources */,
 				1AFB3A9D1CCE067100F14407 /* Functions.swift in Sources */,
 				1AFF858F1CCCFF2F00C4CC47 /* RCAnimatedImagesView.m in Sources */,
@@ -343,20 +347,20 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		1AFBFCD21CCA5D0100842AA8 /* About.storyboard */ = {
+		1A808B3D1CD906220050145F /* Me.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1AFBFCD31CCA5D0100842AA8 /* Base */,
+				1A808B3E1CD906220050145F /* Base */,
 			);
-			name = About.storyboard;
+			name = Me.storyboard;
 			sourceTree = "<group>";
 		};
-		1AFBFCD71CCA5D4300842AA8 /* Contacts.storyboard */ = {
+		1AFBFCD71CCA5D4300842AA8 /* Share.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1AFBFCD81CCA5D4300842AA8 /* Base */,
 			);
-			name = Contacts.storyboard;
+			name = Share.storyboard;
 			sourceTree = "<group>";
 		};
 		1AFF85821CCCFA6C00C4CC47 /* Login.storyboard */ = {

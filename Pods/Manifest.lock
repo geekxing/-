@@ -4,6 +4,7 @@ PODS:
   - JSAnimatedImagesView (1.0.0):
     - MSWeakTimer (~> 1.0)
   - KxMenu (1)
+  - MJRefresh (3.1.0)
   - MSWeakTimer (1.1.0)
   - RESideMenu (4.0.7)
   - RongCloudIMKit (2.5.0)
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - AVOSCloud
   - JSAnimatedImagesView
   - KxMenu
+  - MJRefresh
   - RESideMenu
   - RongCloudIMKit (= 2.5.0)
   - UITableView+FDTemplateLayoutCell
@@ -23,6 +25,7 @@ SPEC CHECKSUMS:
   AVOSCloud: b789619942a4275e615f8f0782e7475675951b95
   JSAnimatedImagesView: d5c5f561280171ce13f1f08ba9834c47a1f27bfc
   KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
   RongCloudIMKit: 3d8473f022c7588db80ef81caf0208e5c2fa4789

@@ -22,8 +22,26 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGh-6C-FUH" userLabel="Log In Stack View">
-                                <rect key="frame" x="0.0" y="218" width="600" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head1" translatesAutoresizingMaskIntoConstraints="NO" id="KKn-dC-EBp" customClass="HeaderImageView" customModule="小微信" customModuleProvider="target">
+                                <rect key="frame" x="240" y="50" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="FSq-ex-F8V"/>
+                                    <constraint firstAttribute="width" constant="120" id="eU6-fz-9WQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.64400692110000002" blue="0.94164219800000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGh-6C-FUH" userLabel="Log In Stack View">
+                                <rect key="frame" x="0.0" y="200" width="600" height="30"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ntC-kE-Rk6">
                                         <rect key="frame" x="0.0" y="0.0" width="521" height="30"/>
@@ -65,7 +83,7 @@
                                 </variation>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QsP-dw-5dE">
-                                <rect key="frame" x="0.0" y="503" width="600" height="30"/>
+                                <rect key="frame" x="0.0" y="530" width="600" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Kl-Cy-ubk">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
@@ -83,26 +101,8 @@
                                     <constraint firstItem="9Kl-Cy-ubk" firstAttribute="width" secondItem="knS-Ix-GgQ" secondAttribute="width" id="nhx-7w-hJg"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="head1" translatesAutoresizingMaskIntoConstraints="NO" id="KKn-dC-EBp" customClass="HeaderImageView" customModule="小微信" customModuleProvider="target">
-                                <rect key="frame" x="240" y="54" width="120" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="FSq-ex-F8V"/>
-                                    <constraint firstAttribute="width" constant="120" id="eU6-fz-9WQ"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="60"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.64400692110000002" blue="0.94164219800000004" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="M29-FR-FU2">
-                                <rect key="frame" x="443" y="349" width="122" height="31"/>
+                                <rect key="frame" x="443" y="419" width="122" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自动登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiP-uT-8Al">
                                         <rect key="frame" x="0.0" y="0.0" width="68" height="31"/>
@@ -122,18 +122,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="QsP-dw-5dE" secondAttribute="trailing" id="4FJ-F1-iyS"/>
-                            <constraint firstItem="hGh-6C-FUH" firstAttribute="top" secondItem="KKn-dC-EBp" secondAttribute="bottom" constant="44" id="88L-nJ-QRp"/>
                             <constraint firstItem="jOo-4l-bfj" firstAttribute="top" secondItem="K1Q-qI-pJI" secondAttribute="bottom" constant="-20" id="B2d-Tw-DDn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="M29-FR-FU2" secondAttribute="trailing" constant="15" id="DGd-17-bxp"/>
-                            <constraint firstItem="KKn-dC-EBp" firstAttribute="top" secondItem="K1Q-qI-pJI" secondAttribute="bottom" constant="34" id="Izi-28-6R7"/>
-                            <constraint firstItem="GS9-kd-vwI" firstAttribute="top" secondItem="QsP-dw-5dE" secondAttribute="bottom" constant="67" id="QpD-g3-Cj3"/>
-                            <constraint firstItem="knS-Ix-GgQ" firstAttribute="top" secondItem="M29-FR-FU2" secondAttribute="bottom" constant="123" id="TUN-SH-rGf"/>
+                            <constraint firstItem="KKn-dC-EBp" firstAttribute="top" secondItem="Z51-wD-hnq" secondAttribute="topMargin" constant="50" id="Ek5-R9-GBL"/>
+                            <constraint firstItem="KKn-dC-EBp" firstAttribute="centerX" secondItem="Z51-wD-hnq" secondAttribute="centerX" id="I7b-J1-EKk"/>
+                            <constraint firstItem="GS9-kd-vwI" firstAttribute="top" secondItem="QsP-dw-5dE" secondAttribute="bottom" constant="40" id="QpD-g3-Cj3"/>
+                            <constraint firstItem="knS-Ix-GgQ" firstAttribute="top" secondItem="M29-FR-FU2" secondAttribute="bottom" constant="80" id="TUN-SH-rGf"/>
                             <constraint firstItem="QsP-dw-5dE" firstAttribute="top" secondItem="jOo-4l-bfj" secondAttribute="bottom" id="UJr-hh-UzY"/>
                             <constraint firstItem="QsP-dw-5dE" firstAttribute="leading" secondItem="Z51-wD-hnq" secondAttribute="leading" id="UaO-vu-LWP"/>
                             <constraint firstAttribute="trailing" secondItem="jOo-4l-bfj" secondAttribute="trailing" id="WRy-Z8-an5"/>
                             <constraint firstItem="GS9-kd-vwI" firstAttribute="top" secondItem="jOo-4l-bfj" secondAttribute="bottom" constant="20" id="d7r-5z-tSD"/>
+                            <constraint firstItem="hGh-6C-FUH" firstAttribute="top" secondItem="KKn-dC-EBp" secondAttribute="bottom" constant="30" id="hR1-tL-jy4"/>
                             <constraint firstAttribute="trailing" secondItem="hGh-6C-FUH" secondAttribute="trailing" id="hZe-Qz-oGT"/>
-                            <constraint firstItem="KKn-dC-EBp" firstAttribute="centerX" secondItem="Z51-wD-hnq" secondAttribute="centerX" id="oGk-Lb-WTP"/>
                             <constraint firstItem="jOo-4l-bfj" firstAttribute="leading" secondItem="Z51-wD-hnq" secondAttribute="leading" id="w7r-e9-0Nu"/>
                             <constraint firstItem="hGh-6C-FUH" firstAttribute="leading" secondItem="Z51-wD-hnq" secondAttribute="leading" id="xjx-aF-whh"/>
                         </constraints>
@@ -145,6 +145,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kb2-a6-j4i"/>
                     <connections>
+                        <outlet property="headImageView" destination="KKn-dC-EBp" id="udO-7R-g4p"/>
                         <outlet property="loginStackView" destination="hGh-6C-FUH" id="QcN-nP-ATB"/>
                         <outlet property="pass" destination="lAT-Tw-D6G" id="pZS-KJ-AkH"/>
                         <outlet property="user" destination="ntC-kE-Rk6" id="8dc-CL-Zsu"/>
@@ -371,6 +372,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="head1" width="60" height="60"/>
+        <image name="head1" width="180" height="180"/>
     </resources>
 </document>

@@ -12,22 +12,23 @@ class FriendTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
-    @IBOutlet weak var userLabel: UILabel!
+    @IBOutlet weak var headImgView: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var commentButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
+        commentButton.addTarget(self, action: #selector(comment), forControlEvents: .TouchUpInside)
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
         titleLabel.text = nil
         contentLabel.text = nil
-        userLabel.text = nil
         dateLabel.text = nil
+        headImgView.image = nil
         imgView.image = nil
     }
     
@@ -42,14 +43,16 @@ class FriendTableViewCell: UITableViewCell {
     func configureCell(result: JSONResult) {
         titleLabel.text = result.title
         contentLabel.text = result.content
-        userLabel.text = result.username
         dateLabel.text = result.time
         if let image = UIImage(named: result.imageName) {
+            headImgView.image = UIImage(named: result.imageName)
             imgView.image = image
         }
     }
     
-    
+    func comment() {
+        print("点击事件")
+    }
     
 //    override func sizeThatFits(size: CGSize) -> CGSize {
 //        var totalHeight: CGFloat = 0

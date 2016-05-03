@@ -9,3 +9,4 @@
 #import <AJWValidator/AJWValidator.h>
 #import <AVOSCloud/AVOSCloud.h>
 #import <UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell.h>
+#import <MJRefresh/MJRefresh.h>

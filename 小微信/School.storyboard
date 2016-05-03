@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--客服-->
+        <!--校上-->
         <scene sceneID="lia-Cw-4FG">
             <objects>
                 <viewController id="WtD-H1-WFl" sceneMemberID="viewController">
@@ -18,17 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="客服" id="BRc-UI-nfk"/>
+                    <navigationItem key="navigationItem" title="校上" id="BRc-UI-nfk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rh1-5Y-eGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2631" y="1571"/>
         </scene>
-        <!--客服-->
+        <!--校上-->
         <scene sceneID="rC8-Is-qmw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rfh-Nv-b2p" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="客服" id="w1i-iD-eng"/>
+                    <tabBarItem key="tabBarItem" title="校上" image="校上" id="w1i-iD-eng"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="cqp-iC-d9v">
@@ -45,4 +45,7 @@
             <point key="canvasLocation" x="1819" y="1571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="校上" width="33" height="33"/>
+    </resources>
 </document>
