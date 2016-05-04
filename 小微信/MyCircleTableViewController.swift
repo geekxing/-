@@ -16,6 +16,10 @@ class MyCircleTableViewController: UITableViewController {
     var headImageName: String!
     var results = [Int]()
 
+    override func viewWillAppear(animated: Bool) {
+        navigationController?.navigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -2,16 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "xs.png"
     },
     {
       "idiom" : "universal",
-      "filename" : "遇见.png",
+      "filename" : "xs@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "遇见@2x.png",
+      "filename" : "xs@3x.png",
       "scale" : "3x"
     }
   ],

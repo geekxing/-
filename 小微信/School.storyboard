@@ -28,7 +28,7 @@
         <scene sceneID="rC8-Is-qmw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rfh-Nv-b2p" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="校上" image="校上" id="w1i-iD-eng"/>
+                    <tabBarItem key="tabBarItem" title="校上" image="xs" selectedImage="xsx_xs_green" id="w1i-iD-eng"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="cqp-iC-d9v">
@@ -46,6 +46,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="校上" width="33" height="33"/>
+        <image name="xs" width="30" height="30"/>
+        <image name="xsx_xs_green" width="30" height="30"/>
     </resources>
 </document>

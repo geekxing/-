@@ -52,11 +52,11 @@
             </objects>
             <point key="canvasLocation" x="2443" y="123"/>
         </scene>
-        <!--聊天-->
+        <!--遇见-->
         <scene sceneID="u2g-gp-iZP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YoZ-3d-OUb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="聊天" id="KCf-96-DUD"/>
+                    <tabBarItem key="tabBarItem" title="遇见" image="yj" selectedImage="xsx_yj_green" id="KCf-96-DUD"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="xPx-3a-ube">
@@ -73,5 +73,9 @@
             <point key="canvasLocation" x="920" y="124"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="xsx_yj_green" width="25" height="25"/>
+        <image name="yj" width="25" height="25"/>
+    </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

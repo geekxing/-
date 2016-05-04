@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--通讯录-->
+        <!--乐享-->
         <scene sceneID="umi-pq-w73">
             <objects>
-                <viewController id="BCZ-d2-rhk" sceneMemberID="viewController">
+                <viewController id="BCZ-d2-rhk" customClass="TestViewController" customModule="小微信" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="83u-Po-X8h"/>
                         <viewControllerLayoutGuide type="bottom" id="Zym-sP-lGA"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="通讯录" id="rDC-A5-rsC"/>
+                    <navigationItem key="navigationItem" title="乐享" id="rDC-A5-rsC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m65-Au-oLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -28,7 +28,7 @@
         <scene sceneID="MB9-ji-7hN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rig-Ip-BTC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="乐享" image="乐享" id="nyz-3w-pey"/>
+                    <tabBarItem key="tabBarItem" title="乐享" image="lx" selectedImage="xsx_lx_green" id="nyz-3w-pey"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="70U-hO-lkx">
@@ -46,6 +46,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="乐享" width="33" height="33"/>
+        <image name="lx" width="25" height="25"/>
+        <image name="xsx_lx_green" width="25" height="25"/>
     </resources>
 </document>

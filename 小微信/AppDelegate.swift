@@ -57,6 +57,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource {
         }
         
     }
+    
+    func customizeAppearance() {
+        UITabBar.appearance().tintColor = UIColor(red: 0/255, green: 200/255, blue: 30/255, alpha: 0.7)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+    }
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -64,7 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource {
         //将用户信息提供者设置为自己的AppDelegate
         RCIM.sharedRCIM().userInfoDataSource = self
         AVOSCloud.setApplicationId("S8IggJCxymrFGBHJ2imUqyP9-gzGzoHsz", clientKey: "1llitKtLP8AqiRjNhRmm23TX")
-
+        customizeAppearance()
         return true
     }
 
