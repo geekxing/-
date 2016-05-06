@@ -22,30 +22,37 @@ class MyCircleTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let nib = UINib(nibName: "HeadImageCell", bundle: nil)
-        tableView.registerNib(nib, forCellReuseIdentifier: "HeadImageCell")
         
-
-        headButton = configureButtonWithImageName(headImageName)
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "DefaultCell")
+        
+        /* 建立表视图的headerView和footerView */
+        let headerView = UIView(frame: CGRectMake(0,-40,view.bounds.width,280))
+        let headerImgView = UIImageView(frame: CGRectMake(0, -40, view.bounds.width, 240))
+        headerImgView.image = UIImage(named: "image1")
+        
+        let width = view.bounds.width
+        headButton = configureButtonWithImageName("head1", andFrame: CGRectMake(width - 110, 135, 100, 100))
         headButton.addTarget(self, action: #selector(clickHeader), forControlEvents: .TouchUpInside)
         
-        nameLabel = configureLabelWithText(nameLabelText)
+        nameLabel = configureLabelWithText("赖霄冰",andFrame: CGRectMake(width - 160, 170, 40, 30))
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        tableView.insertSubview(headButton, atIndex: 1)
-        tableView.insertSubview(nameLabel, atIndex: 2)
+        headerView.addSubview(headerImgView)
+        headerView.addSubview(headButton)
+        headerView.addSubview(nameLabel)
         
-        let _superView = headButton.superview!
-        
-        let constraint1  = NSLayoutConstraint(item: nameLabel, attribute: .Trailing, relatedBy: .Equal, toItem: headButton , attribute: .Leading, multiplier: 1, constant: -10)
-        let constraint2 = NSLayoutConstraint(item: nameLabel, attribute: .Top, relatedBy: .Equal, toItem: _superView, attribute: .Top, multiplier: 1.0, constant: 190)
-        let constraint3 = NSLayoutConstraint(item: nameLabel, attribute: .Leading, relatedBy: .GreaterThanOrEqual, toItem: _superView, attribute: .Leading, multiplier: 1.0, constant: 20)
+        /* 添加头像和名字标签的约束 */
+        let constraint1 = NSLayoutConstraint(item: nameLabel, attribute: .Trailing, relatedBy: .Equal, toItem: headButton, attribute: .Leading, multiplier: 1.0, constant: -10)
+        let constraint2 = NSLayoutConstraint(item: nameLabel, attribute: .Top, relatedBy: .Equal, toItem: headerView, attribute: .Top, multiplier: 1.0, constant: 170)
+        let constraint3 = NSLayoutConstraint(item: nameLabel, attribute: .Leading, relatedBy: .GreaterThanOrEqual, toItem: headerView, attribute: .Leading, multiplier: 1.0, constant: 20)
         constraint1.active = true
         constraint2.active = true
         constraint3.active = true
         
-        navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
+        tableView.tableHeaderView = headerView
+        let footerView = UIView()
+        footerView.backgroundColor = UIColor.whiteColor()
+        tableView.tableFooterView = footerView
         
         tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(loadNewData))
         
@@ -77,30 +84,20 @@ class MyCircleTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return results.count == 0 ? 1 : results.count
+//        return results.count == 0 ? 1 : results.count
+        return results.count
     }
 
     // MARK: - Table view delegate
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCellWithIdentifier("HeadImageCell") as! HeadImageTableViewCell
-            cell.bigImageView.image = UIImage(named: "image1")
-            let width = UIScreen.mainScreen().bounds.width
-            cell.separatorInset = UIEdgeInsetsMake(0, width, 0, 0)
-            return cell
-        } else {
-            let cell = UITableViewCell(style: .Default, reuseIdentifier: "DefaultCell")
-            cell.textLabel?.text = "\(results[indexPath.row])"
-            return cell
-        }
+        let cell = UITableViewCell(style: .Default, reuseIdentifier: "DefaultCell")
+        cell.textLabel?.text = "\(results[indexPath.row])"
+        return cell
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if indexPath.row == 0 {
-            return 230
-        } else {
-            return 44
-        }
+        return 44
     }
 }
+

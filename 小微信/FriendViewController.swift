@@ -12,10 +12,15 @@ class FriendViewController: UITableViewController {
     
     var headButton: UIButton!
     var nameLabel: UILabel!
+    var messageBtn: UIButton!
+    var maskBtn: UIButton!
+    var swipeGestureUp: UpswipeGesRecognizer!
+    var swipeGestureDown: DownswipeGesRecognizer!
 
     lazy var headImageView: UIImageView = {
-       let imageView = UIImageView(frame: CGRectMake(0, -self.view.bounds.height * 0.3, self.view.bounds.width, self.view.bounds.height * 0.3))
+       let imageView = UIImageView(frame: CGRectMake(0, -self.view.bounds.height * 0.3, self.view.bounds.width, self.view.bounds.height * 0.2))
         imageView.image = UIImage(named: "navigation")
+        imageView.userInteractionEnabled = true
        return imageView
     }()
     lazy var bottomImageView: UIImageView = {
@@ -39,55 +44,67 @@ class FriendViewController: UITableViewController {
         
         let statusBackgroundView = UIView(frame: CGRectMake(0,-20,view.bounds.width,20))
         statusBackgroundView.backgroundColor = UIColor.darkGrayColor()
-        view.addSubview(statusBackgroundView)
+        //navigationController?.navigationBar.addSubview(statusBackgroundView)
+        navigationController?.setNavigationBarHidden(true, animated: true)
         for (_, subview) in view.subviews.enumerate() {
             subview.userInteractionEnabled = true
             print("\(subview)")
         }
-        tableView.scrollEnabled = false
-        let swipeGestureUp = UISwipeGestureRecognizer(target: self, action: #selector(showMenuBar))
-        swipeGestureUp.direction = .Up
-        let swipeGestureDown = UISwipeGestureRecognizer(target: self, action: #selector(showMenuBar))
-        swipeGestureDown.direction = .Down
-        view.addGestureRecognizer(swipeGestureDown)
-        view.addGestureRecognizer(swipeGestureUp)
-        navigationController?.navigationBarHidden = true
+        
+        /* 添加自定义轻扫手势弹出导航菜单 */
+        swipeGestureUp = UpswipeGesRecognizer(target: self, action: #selector(hideMenuBar))
+        swipeGestureUp.delegate = self
+        swipeGestureDown = DownswipeGesRecognizer(target: self, action: #selector(showMenuBar))
+        swipeGestureDown.delegate = self
+        //swipeGestureDown.direction = .Down
+        tableView.addGestureRecognizer(swipeGestureDown)
+        tableView.addGestureRecognizer(swipeGestureUp)
+        
+        /* iOS 7 动态调整Cell高度 */
         tableView.estimatedRowHeight = 200
         //tableView.fd_debugLogEnabled = true
-        var nib = UINib(nibName: "HeadImageCell", bundle: nil)
-        tableView.registerNib(nib, forCellReuseIdentifier: "HeadImageCell")
-        nib = UINib(nibName: "FriendCell", bundle: nil)
+        /* 注册复用Cell */
+        var nib = UINib(nibName: "FriendCell", bundle: nil)
         tableView.registerNib(nib, forCellReuseIdentifier: "FriendCell")
+        
+        /* 读取JSON数据 */
         let dataPath = NSBundle.mainBundle().pathForResource("data", ofType: "json")
         if let data = NSData(contentsOfFile: dataPath!) {
            jsonResults = parseJSON.loadJSONData(data)
         }
         
-        headButton = configureButtonWithImageName("head1")
-        headButton.addTarget(self, action: #selector(clickHeader), forControlEvents: .TouchUpInside)
+        /* 建立表视图的headerView和footerView */
+        let headerView = UIView(frame: CGRectMake(0,-40,view.bounds.width,280))
+        let headerImgView = UIImageView(frame: CGRectMake(0, -40, view.bounds.width, 240))
+        headerImgView.image = UIImage(named: "image1")
         
-        nameLabel = configureLabelWithText("赖霄冰")
+        let width = view.bounds.width
+        headButton = configureButtonWithImageName("head1", andFrame: CGRectMake(width - 110, 135, 100, 100))
+        headButton.addTarget(self, action: #selector(clickHeader), forControlEvents: .TouchUpInside)
+        nameLabel = configureLabelWithText("赖霄冰",andFrame: CGRectMake(width - 160, 170, 40, 30))
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        tableView.insertSubview(headButton, atIndex: 1)
-        tableView.insertSubview(nameLabel, atIndex: 2)
+        headerView.addSubview(headerImgView)
+        headerView.addSubview(headButton)
+        headerView.addSubview(nameLabel)
         
-        let _superView = headButton.superview!
-        
-        /* 建立头像和名字之间的约束 */
-        let constraint1  = NSLayoutConstraint(item: nameLabel, attribute: .Trailing, relatedBy: .Equal, toItem: headButton , attribute: .Leading, multiplier: 1, constant: -10)
-        let constraint2 = NSLayoutConstraint(item: nameLabel, attribute: .Top, relatedBy: .Equal, toItem: _superView, attribute: .Top, multiplier: 1.0, constant: 190)
-        let constraint3 = NSLayoutConstraint(item: nameLabel, attribute: .Leading, relatedBy: .GreaterThanOrEqual, toItem: _superView, attribute: .Leading, multiplier: 1.0, constant: 20)
+        /* 添加头像和名字标签的约束 */
+        let constraint1 = NSLayoutConstraint(item: nameLabel, attribute: .Trailing, relatedBy: .Equal, toItem: headButton, attribute: .Leading, multiplier: 1.0, constant: -10)
+        let constraint2 = NSLayoutConstraint(item: nameLabel, attribute: .Top, relatedBy: .Equal, toItem: headerView, attribute: .Top, multiplier: 1.0, constant: 170)
+        let constraint3 = NSLayoutConstraint(item: nameLabel, attribute: .Leading, relatedBy: .GreaterThanOrEqual, toItem: headerView, attribute: .Leading, multiplier: 1.0, constant: 20)
         constraint1.active = true
         constraint2.active = true
         constraint3.active = true
         
-        navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
+        tableView.tableHeaderView = headerView
+        let footerView = UIView()
+        footerView.backgroundColor = UIColor.whiteColor()
+        tableView.tableFooterView = footerView
         /* 建立上拉刷新 */
         tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(loadNewData))
-        
+        tableView.mj_header.mj_size = CGSizeMake(50, 20)
+        tableView.mj_header.mj_origin = CGPointMake(view.center.x-25, -60)
         self.tableView.mj_header.automaticallyChangeAlpha = true
-        
         
         // Do any additional setup after loading the view.
     }
@@ -100,22 +117,33 @@ class FriendViewController: UITableViewController {
     //MARK: - 自定义方法
     
     /* 响应轻扫手势弹出导航菜单 */
-    func showMenuBar(gesRecognizer: UISwipeGestureRecognizer) {
-        if gesRecognizer.direction == .Up {
-            print("开始滑动")
-            view.addSubview(headImageView)
-            view.addSubview(bottomImageView)
-            UIView.animateWithDuration(0.6, delay: 0, options: .CurveEaseOut, animations: {
-                self.headImageView.frame = CGRectMake(0, 0, self.headImageView.bounds.width, self.headImageView.bounds.height)
-                self.bottomImageView.frame = CGRectMake(0, self.view.bounds.height-60-self.bottomImageView.bounds.height, self.bottomImageView.bounds.width, self.bottomImageView.bounds.height)
-                }, completion: nil) }
-        if gesRecognizer.direction == .Down {
-            UIView.animateWithDuration(0.6, delay: 0, options: .CurveEaseIn, animations: {
-                self.headImageView.frame = CGRectMake(0, -self.headImageView.bounds.height, self.headImageView.bounds.width, self.headImageView.bounds.height)
-                self.bottomImageView.frame = CGRectMake(0, self.view.bounds.height, self.bottomImageView.bounds.width, self.bottomImageView.bounds.height)
-            }) { _ in self.headImageView.removeFromSuperview()
-                      self.bottomImageView.removeFromSuperview()
+    func showMenuBar(gesRecognizer: UpswipeGesRecognizer) {
+        print("开始滑动")
+        tableView.superview!.addSubview(headImageView)
+        self.messageBtn = configureButtonWithImageName(nil, andFrame: CGRectMake(15, 35, 30, 40))
+        self.messageBtn.addTarget(self, action: #selector(clickMsg), forControlEvents: .TouchUpInside)
+        headImageView.addSubview(self.messageBtn)
+        maskBtn = configureButtonWithImageName(nil, andFrame: CGRectMake(view.bounds.width-45, 35, 30, 40))
+        maskBtn.addTarget(self, action: #selector(clickMask), forControlEvents: .TouchUpInside)
+        headImageView.addSubview(maskBtn)
+        tableView.superview!.addSubview(bottomImageView)
+        UIView.animateWithDuration(0.6, delay: 0, options: .CurveEaseOut, animations: {
+            self.headImageView.frame = CGRectMake(0, 0, self.headImageView.bounds.width, self.headImageView.bounds.height)
+            self.bottomImageView.frame = CGRectMake(0, self.view.bounds.height-43-self.bottomImageView.bounds.height, self.bottomImageView.bounds.width, self.bottomImageView.bounds.height)
+            }, completion: nil)
+    }
+    
+    func hideMenuBar(gesRecognizer: DownswipeGesRecognizer) {
+        print("开始滑动")
+        UIView.animateWithDuration(0.6, delay: 0, options: .CurveEaseIn, animations: {
+            self.headImageView.frame = CGRectMake(0, -self.headImageView.bounds.height, self.headImageView.bounds.width, self.headImageView.bounds.height)
+            self.bottomImageView.frame = CGRectMake(0, self.view.bounds.height, self.bottomImageView.bounds.width, self.bottomImageView.bounds.height)
+        }) { _ in self.headImageView.removeFromSuperview()
+            if let msgBtn = self.messageBtn, let mskBtn = self.maskBtn {
+                msgBtn.removeFromSuperview()
+                mskBtn.removeFromSuperview()
             }
+            self.bottomImageView.removeFromSuperview()
         }
     }
     
@@ -123,6 +151,16 @@ class FriendViewController: UITableViewController {
     func clickHeader() {
         print("点击头像")
         performSegueWithIdentifier("showMyCircle", sender: nil)
+    }
+    
+    func clickMsg() {
+        print("点击消息")
+        performSegueWithIdentifier("showMessage", sender: nil)
+    }
+    
+    func clickMask() {
+        print("发布动态")
+        performSegueWithIdentifier("writeLog", sender: nil)
     }
     
     /* 上拉刷新数据 */
@@ -146,19 +184,11 @@ class FriendViewController: UITableViewController {
     
 //    //MARK: - Delegate
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCellWithIdentifier("HeadImageCell", forIndexPath: indexPath) as! HeadImageTableViewCell
-            cell.bigImageView.image = UIImage(named: "image1")
-            let width = UIScreen.mainScreen().bounds.width
-            cell.separatorInset = UIEdgeInsetsMake(0, width, 0, 0)
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCellWithIdentifier("FriendCell", forIndexPath: indexPath) as! FriendTableViewCell
-            let jsonResult = jsonResults[indexPath.row]
-            cell.configureCell(jsonResult)
-            cell.selectionStyle = .None
-            return  cell
-        }
+        let cell = tableView.dequeueReusableCellWithIdentifier("FriendCell", forIndexPath: indexPath) as! FriendTableViewCell
+        let jsonResult = jsonResults[indexPath.row]
+        cell.configureCell(jsonResult)
+        cell.selectionStyle = .None
+        return  cell
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -174,16 +204,12 @@ class FriendViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if indexPath.row == 0 {
-            return 230
-        } else {
-            return tableView.fd_heightForCellWithIdentifier("FriendCell", configuration: { (cell) in
-                let cell = cell as! FriendTableViewCell
-                
-                let jsonResult = self.jsonResults[indexPath.row]
-                cell.configureCell(jsonResult)
-            })
-        }
+        return tableView.fd_heightForCellWithIdentifier("FriendCell", configuration: { (cell) in
+            let cell = cell as! FriendTableViewCell
+            
+            let jsonResult = self.jsonResults[indexPath.row]
+            cell.configureCell(jsonResult)
+        })
     }
 }
 

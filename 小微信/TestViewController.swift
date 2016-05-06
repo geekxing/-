@@ -21,8 +21,8 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(showMenuBar))
-        swipeGesture.direction = .Up
+        let swipeGesture = UpswipeGesRecognizer(target: self, action: #selector(showMenuBar))
+        //swipeGesture.direction = .Up
         view.backgroundColor = UIColor.greenColor()
         view.addGestureRecognizer(swipeGesture)
         // Do any additional setup after loading the view.
@@ -47,4 +47,14 @@ class TestViewController: UIViewController {
     }
     */
 
+}
+
+extension TestViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailByGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        if gestureRecognizer.isKindOfClass(UISwipeGestureRecognizer) {
+            return false
+        } else {
+            return true
+        }
+    }
 }

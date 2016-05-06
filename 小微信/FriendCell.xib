@@ -45,23 +45,21 @@
                             <constraint firstAttribute="width" constant="45" id="Zax-aa-fZU"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFv-DK-x7n">
-                        <rect key="frame" x="280" y="151" width="32" height="22"/>
-                        <color key="backgroundColor" red="0.0" green="0.64400692110000002" blue="0.94164219800000004" alpha="1" colorSpace="calibratedRGB"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                        <state key="normal" title="点赞">
-                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13T-Cb-Eyy">
                         <rect key="frame" x="61" y="156" width="29" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFv-DK-x7n">
+                        <rect key="frame" x="285" y="151" width="22" height="22"/>
+                        <state key="normal" image="comment">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="hFv-DK-x7n" secondAttribute="trailing" id="2BI-dM-oXG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hFv-DK-x7n" secondAttribute="trailing" constant="5" id="2BI-dM-oXG"/>
                     <constraint firstAttribute="trailingMargin" secondItem="vTh-7Y-i3m" secondAttribute="trailing" constant="5" id="CPU-Z2-22j"/>
                     <constraint firstItem="uRT-yM-1ZO" firstAttribute="leading" secondItem="bKL-lr-QsY" secondAttribute="leading" constant="8" id="GYa-kK-izl"/>
                     <constraint firstAttribute="trailing" secondItem="BhO-1D-HHB" secondAttribute="trailing" constant="114" id="Gu9-dJ-T2g"/>
@@ -102,4 +100,7 @@
             <point key="canvasLocation" x="238" y="243"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="comment" width="25" height="25"/>
+    </resources>
 </document>
