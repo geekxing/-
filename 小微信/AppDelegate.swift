@@ -59,8 +59,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource {
     }
     
     func customizeAppearance() {
+        UINavigationBar.appearance().barTintColor = UIColor(white: 0.1, alpha: 0.8)
         UITabBar.appearance().tintColor = UIColor(red: 0/255, green: 200/255, blue: 30/255, alpha: 0.7)
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
     
 

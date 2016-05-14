@@ -12,10 +12,12 @@ class FriendViewController: UITableViewController {
     
     var headButton: UIButton!
     var nameLabel: UILabel!
-    var messageBtn: UIButton!
-    var maskBtn: UIButton!
-    var swipeGestureUp: UpswipeGesRecognizer!
-    var swipeGestureDown: DownswipeGesRecognizer!
+    var messageBtn: UIButton?
+    var maskBtn: UIButton?
+    var swipeGestureUp: UISwipeGestureRecognizer!
+    var swipeGestureDown: UISwipeGestureRecognizer!
+    
+    var friendData = [String]()
 
     lazy var headImageView: UIImageView = {
        let imageView = UIImageView(frame: CGRectMake(0, -self.view.bounds.height * 0.3, self.view.bounds.width, self.view.bounds.height * 0.2))
@@ -35,12 +37,17 @@ class FriendViewController: UITableViewController {
         print("退出朋友圈")
     }
     
+    //MARK: - Life Cycle methods
+    
     override func viewWillAppear(animated: Bool) {
         navigationController?.navigationBarHidden = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //点赞功能模拟数据
+        friendData = ["李四","Neusoft","我是你的小🍎","1+1=?","德玛西亚万岁","一","你是我的眼","BraverSmile"]
+        listenForCommentButtonDidTapNotification()
         
         let statusBackgroundView = UIView(frame: CGRectMake(0,-20,view.bounds.width,20))
         statusBackgroundView.backgroundColor = UIColor.darkGrayColor()
@@ -52,11 +59,13 @@ class FriendViewController: UITableViewController {
         }
         
         /* 添加自定义轻扫手势弹出导航菜单 */
-        swipeGestureUp = UpswipeGesRecognizer(target: self, action: #selector(hideMenuBar))
+        swipeGestureUp = UISwipeGestureRecognizer(target: self, action: #selector(hideMenuBar))
+        swipeGestureUp.direction = .Up
         swipeGestureUp.delegate = self
-        swipeGestureDown = DownswipeGesRecognizer(target: self, action: #selector(showMenuBar))
+        swipeGestureDown = UISwipeGestureRecognizer(target: self, action: #selector(showMenuBar))
+        swipeGestureDown.direction = .Down
         swipeGestureDown.delegate = self
-        //swipeGestureDown.direction = .Down
+
         tableView.addGestureRecognizer(swipeGestureDown)
         tableView.addGestureRecognizer(swipeGestureUp)
         
@@ -106,6 +115,8 @@ class FriendViewController: UITableViewController {
         tableView.mj_header.mj_origin = CGPointMake(view.center.x-25, -60)
         self.tableView.mj_header.automaticallyChangeAlpha = true
         
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -117,15 +128,19 @@ class FriendViewController: UITableViewController {
     //MARK: - 自定义方法
     
     /* 响应轻扫手势弹出导航菜单 */
-    func showMenuBar(gesRecognizer: UpswipeGesRecognizer) {
+    func showMenuBar(gesRecognizer: UISwipeGestureRecognizer) {
         print("开始滑动")
         tableView.superview!.addSubview(headImageView)
-        self.messageBtn = configureButtonWithImageName(nil, andFrame: CGRectMake(15, 35, 30, 40))
-        self.messageBtn.addTarget(self, action: #selector(clickMsg), forControlEvents: .TouchUpInside)
-        headImageView.addSubview(self.messageBtn)
-        maskBtn = configureButtonWithImageName(nil, andFrame: CGRectMake(view.bounds.width-45, 35, 30, 40))
-        maskBtn.addTarget(self, action: #selector(clickMask), forControlEvents: .TouchUpInside)
-        headImageView.addSubview(maskBtn)
+        if messageBtn == nil {
+            self.messageBtn = configureButtonWithImageName(nil, andFrame: CGRectMake(15, 35, 30, 40))
+            self.messageBtn!.addTarget(self, action: #selector(clickMsg), forControlEvents: .TouchUpInside)
+            headImageView.addSubview(self.messageBtn!)
+        }
+        if maskBtn == nil {
+            maskBtn = configureButtonWithImageName(nil, andFrame: CGRectMake(view.bounds.width-45, 35, 30, 40))
+            maskBtn!.addTarget(self, action: #selector(clickMask), forControlEvents: .TouchUpInside)
+            headImageView.addSubview(maskBtn!)
+        }
         tableView.superview!.addSubview(bottomImageView)
         UIView.animateWithDuration(0.6, delay: 0, options: .CurveEaseOut, animations: {
             self.headImageView.frame = CGRectMake(0, 0, self.headImageView.bounds.width, self.headImageView.bounds.height)
@@ -133,7 +148,7 @@ class FriendViewController: UITableViewController {
             }, completion: nil)
     }
     
-    func hideMenuBar(gesRecognizer: DownswipeGesRecognizer) {
+    func hideMenuBar(gesRecognizer: UISwipeGestureRecognizer) {
         print("开始滑动")
         UIView.animateWithDuration(0.6, delay: 0, options: .CurveEaseIn, animations: {
             self.headImageView.frame = CGRectMake(0, -self.headImageView.bounds.height, self.headImageView.bounds.width, self.headImageView.bounds.height)
@@ -141,7 +156,9 @@ class FriendViewController: UITableViewController {
         }) { _ in self.headImageView.removeFromSuperview()
             if let msgBtn = self.messageBtn, let mskBtn = self.maskBtn {
                 msgBtn.removeFromSuperview()
+                self.messageBtn = nil
                 mskBtn.removeFromSuperview()
+                self.maskBtn = nil
             }
             self.bottomImageView.removeFromSuperview()
         }
@@ -163,6 +180,15 @@ class FriendViewController: UITableViewController {
         performSegueWithIdentifier("writeLog", sender: nil)
     }
     
+    func clickImage(tapGesRecognizer: UITapGestureRecognizer) {
+        print("点击图片")
+        let point = tapGesRecognizer.locationInView(self.tableView)
+        let indexPath = tableView.indexPathForRowAtPoint(point)
+        print("\(indexPath?.row)")
+        let cell = tableView.cellForRowAtIndexPath(indexPath!)
+        performSegueWithIdentifier("ShowImage", sender: cell)
+    }
+    
     /* 上拉刷新数据 */
     func loadNewData() {
         //1、获取更多数据
@@ -175,6 +201,13 @@ class FriendViewController: UITableViewController {
         tableView.mj_header.endRefreshing()
     }
     
+    func listenForCommentButtonDidTapNotification() {
+        NSNotificationCenter.defaultCenter().addObserverForName(CommentButtonDidTapNotification, object: nil, queue: NSOperationQueue.mainQueue()) { (notification) in
+            let cell = notification.object as! FriendTableViewCell
+            cell.friendData = self.friendData
+        }
+    }
+    
     //MARK: - Data Source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -184,10 +217,14 @@ class FriendViewController: UITableViewController {
     
 //    //MARK: - Delegate
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let tapGesRecognizer = UITapGestureRecognizer(target: self, action: #selector(clickImage))
+        tapGesRecognizer.cancelsTouchesInView = false
         let cell = tableView.dequeueReusableCellWithIdentifier("FriendCell", forIndexPath: indexPath) as! FriendTableViewCell
         let jsonResult = jsonResults[indexPath.row]
         cell.configureCell(jsonResult)
         cell.selectionStyle = .None
+        cell.imgView.addGestureRecognizer(tapGesRecognizer)
+        
         return  cell
     }
     
@@ -196,6 +233,13 @@ class FriendViewController: UITableViewController {
             let myCircleVC = segue.destinationViewController as! MyCircleTableViewController
             myCircleVC.headImageName = "head1"
             myCircleVC.nameLabelText = nameLabel.text
+        }
+        if segue.identifier == "ShowImage" {
+            let cell = sender as! FriendTableViewCell
+            let showImgVC = segue.destinationViewController as! ShowImageViewController
+            if let image = cell.imgView.image {
+                showImgVC.image = image
+            }
         }
     }
     

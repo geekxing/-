@@ -12,18 +12,27 @@
 		1A017CB41CC91BD0007F3E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A017CB31CC91BD0007F3E6E /* Assets.xcassets */; };
 		1A017CB71CC91BD0007F3E6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A017CB51CC91BD0007F3E6E /* LaunchScreen.storyboard */; };
 		1A017CBF1CC91C49007F3E6E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1A017CBE1CC91C49007F3E6E /* Podfile */; };
+		1A13797D1CE4E8B3005152A8 /* MyImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13797C1CE4E8B3005152A8 /* MyImagePickerViewController.swift */; };
+		1A1379801CE6DAC8005152A8 /* PraiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A13797F1CE6DAC8005152A8 /* PraiseView.m */; };
+		1A1379821CE70553005152A8 /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1379811CE70553005152A8 /* ShowImageViewController.swift */; };
+		1A1379881CE71583005152A8 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1379871CE71583005152A8 /* DimmingPresentationController.swift */; };
+		1A13798A1CE7158D005152A8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1379891CE7158D005152A8 /* GradientView.swift */; };
+		1A13798C1CE715F9005152A8 /* BounceAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13798B1CE715F9005152A8 /* BounceAnimationController.swift */; };
+		1A13798E1CE71633005152A8 /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13798D1CE71633005152A8 /* FadeOutAnimationController.swift */; };
+		1A1379901CE7245F005152A8 /* MyRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13798F1CE7245F005152A8 /* MyRoundButton.swift */; };
+		1A1379921CE729A6005152A8 /* ShareCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1379911CE729A6005152A8 /* ShareCollectionViewController.swift */; };
+		1A1379941CE72ABE005152A8 /* ShareResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1379931CE72ABE005152A8 /* ShareResult.swift */; };
+		1A1379981CE72B20005152A8 /* ShareCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1379971CE72B20005152A8 /* ShareCollectionViewCell.swift */; };
 		1A51B81B1CCFB9F4000E4768 /* PopViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B81A1CCFB9F4000E4768 /* PopViewItem.swift */; };
 		1A51B8231CCFD72F000E4768 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B8221CCFD72F000E4768 /* FriendViewController.swift */; };
-		1A51B8251CCFD9FD000E4768 /* HeadImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A51B8241CCFD9FD000E4768 /* HeadImageCell.xib */; };
-		1A51B8271CCFDB59000E4768 /* HeadImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A51B8261CCFDB59000E4768 /* HeadImageTableViewCell.swift */; };
+		1A6EE81E1CDC3257002F1F8C /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6EE81C1CDC3257002F1F8C /* Me.storyboard */; };
+		1A6EE8201CDC3D2B002F1F8C /* MsgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6EE81F1CDC3D2B002F1F8C /* MsgCell.xib */; };
+		1A6EE8221CDC5427002F1F8C /* MyMsgTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6EE8211CDC5427002F1F8C /* MyMsgTableViewCell.swift */; };
+		1A6EE8241CDC77FC002F1F8C /* UIEditableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6EE8231CDC77FC002F1F8C /* UIEditableLabel.swift */; };
 		1A808B141CD7A0BE0050145F /* MyCircleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A808B131CD7A0BE0050145F /* MyCircleTableViewController.swift */; };
 		1A808B431CD9AA0F0050145F /* MyTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A808B421CD9AA0F0050145F /* MyTabbarController.swift */; };
-		1A808B481CD9FBAF0050145F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A808B471CD9FBAF0050145F /* TestViewController.swift */; };
 		1A808B551CDA18830050145F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A808B531CDA18830050145F /* Login.storyboard */; };
-		1A808B571CDA1BF90050145F /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A808B561CDA1BF90050145F /* Me.storyboard */; };
 		1A808B591CDA1DC20050145F /* MyNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A808B581CDA1DC20050145F /* MyNavigationViewController.swift */; };
-		1A808B5B1CDA47800050145F /* UpswipeGesRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A808B5A1CDA47800050145F /* UpswipeGesRecognizer.swift */; };
-		1A808B5D1CDA4D0F0050145F /* DownswipeGesRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A808B5C1CDA4D0F0050145F /* DownswipeGesRecognizer.swift */; };
 		1A808B5F1CDB9E7F0050145F /* MyMsgTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A808B5E1CDB9E7F0050145F /* MyMsgTableViewController.swift */; };
 		1A808B611CDBA9040050145F /* MyLogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A808B601CDBA9040050145F /* MyLogTableViewController.swift */; };
 		1A9C61C31CD630A9003D2C76 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C61C21CD630A9003D2C76 /* FriendCell.xib */; };
@@ -56,18 +65,28 @@
 		1A017CB81CC91BD0007F3E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A017CBE1CC91C49007F3E6E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1A017CC01CC91DE7007F3E6E /* 小微信-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "小微信-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A13797C1CE4E8B3005152A8 /* MyImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImagePickerViewController.swift; sourceTree = "<group>"; };
+		1A13797E1CE6DAC8005152A8 /* PraiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PraiseView.h; sourceTree = "<group>"; };
+		1A13797F1CE6DAC8005152A8 /* PraiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PraiseView.m; sourceTree = "<group>"; };
+		1A1379811CE70553005152A8 /* ShowImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
+		1A1379871CE71583005152A8 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
+		1A1379891CE7158D005152A8 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		1A13798B1CE715F9005152A8 /* BounceAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceAnimationController.swift; sourceTree = "<group>"; };
+		1A13798D1CE71633005152A8 /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
+		1A13798F1CE7245F005152A8 /* MyRoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRoundButton.swift; sourceTree = "<group>"; };
+		1A1379911CE729A6005152A8 /* ShareCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareCollectionViewController.swift; sourceTree = "<group>"; };
+		1A1379931CE72ABE005152A8 /* ShareResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareResult.swift; sourceTree = "<group>"; };
+		1A1379971CE72B20005152A8 /* ShareCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareCollectionViewCell.swift; sourceTree = "<group>"; };
 		1A51B81A1CCFB9F4000E4768 /* PopViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopViewItem.swift; sourceTree = "<group>"; };
 		1A51B8221CCFD72F000E4768 /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
-		1A51B8241CCFD9FD000E4768 /* HeadImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadImageCell.xib; sourceTree = "<group>"; };
-		1A51B8261CCFDB59000E4768 /* HeadImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadImageTableViewCell.swift; sourceTree = "<group>"; };
+		1A6EE81D1CDC3257002F1F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Me.storyboard; sourceTree = "<group>"; };
+		1A6EE81F1CDC3D2B002F1F8C /* MsgCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MsgCell.xib; sourceTree = "<group>"; };
+		1A6EE8211CDC5427002F1F8C /* MyMsgTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMsgTableViewCell.swift; sourceTree = "<group>"; };
+		1A6EE8231CDC77FC002F1F8C /* UIEditableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEditableLabel.swift; sourceTree = "<group>"; };
 		1A808B131CD7A0BE0050145F /* MyCircleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCircleTableViewController.swift; sourceTree = "<group>"; };
 		1A808B421CD9AA0F0050145F /* MyTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabbarController.swift; sourceTree = "<group>"; };
-		1A808B471CD9FBAF0050145F /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		1A808B541CDA18830050145F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
-		1A808B561CDA1BF90050145F /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
 		1A808B581CDA1DC20050145F /* MyNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationViewController.swift; sourceTree = "<group>"; };
-		1A808B5A1CDA47800050145F /* UpswipeGesRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpswipeGesRecognizer.swift; sourceTree = "<group>"; };
-		1A808B5C1CDA4D0F0050145F /* DownswipeGesRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownswipeGesRecognizer.swift; sourceTree = "<group>"; };
 		1A808B5E1CDB9E7F0050145F /* MyMsgTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMsgTableViewController.swift; sourceTree = "<group>"; };
 		1A808B601CDBA9040050145F /* MyLogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLogTableViewController.swift; sourceTree = "<group>"; };
 		1A9C61C21CD630A9003D2C76 /* FriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
@@ -128,50 +147,92 @@
 		1A017CAB1CC91BD0007F3E6E /* 小微信 */ = {
 			isa = PBXGroup;
 			children = (
-				1AFF85871CCCFEA800C4CC47 /* 3rd */,
 				1A017CC01CC91DE7007F3E6E /* 小微信-Bridging-Header.h */,
-				1A808B131CD7A0BE0050145F /* MyCircleTableViewController.swift */,
+				1A9C61CC1CD657CF003D2C76 /* data.json */,
 				1A017CB81CC91BD0007F3E6E /* Info.plist */,
 				1A017CAC1CC91BD0007F3E6E /* AppDelegate.swift */,
+				1AFB3A9C1CCE067100F14407 /* Functions.swift */,
+				1A13798F1CE7245F005152A8 /* MyRoundButton.swift */,
+				1A6EE8231CDC77FC002F1F8C /* UIEditableLabel.swift */,
+				1A017CB31CC91BD0007F3E6E /* Assets.xcassets */,
+				1AFF85871CCCFEA800C4CC47 /* 3rd */,
+				1A1379831CE711C4005152A8 /* Controllers */,
+				1A1379841CE71214005152A8 /* Modal */,
+				1A1379861CE71271005152A8 /* Storyboard */,
+				1A1379851CE71247005152A8 /* View */,
+			);
+			path = "小微信";
+			sourceTree = "<group>";
+		};
+		1A1379831CE711C4005152A8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A808B131CD7A0BE0050145F /* MyCircleTableViewController.swift */,
 				1AFBFCD01CCA4E0F00842AA8 /* ConversationTableViewController.swift */,
 				1AFBFCCE1CCA378A00842AA8 /* ConversationViewController.swift */,
-				1A017CB31CC91BD0007F3E6E /* Assets.xcassets */,
+				1AFD58661CCB1AF30053533E /* LoginViewController.swift */,
+				1AFF85851CCCFABF00C4CC47 /* RegTableViewController.swift */,
+				1AFF01321CCF658F00EB24DB /* PopoverViewController.swift */,
+				1A13798B1CE715F9005152A8 /* BounceAnimationController.swift */,
+				1A51B8221CCFD72F000E4768 /* FriendViewController.swift */,
+				1A13798D1CE71633005152A8 /* FadeOutAnimationController.swift */,
+				1A1379811CE70553005152A8 /* ShowImageViewController.swift */,
+				1A1379871CE71583005152A8 /* DimmingPresentationController.swift */,
+				1A808B421CD9AA0F0050145F /* MyTabbarController.swift */,
+				1A808B581CDA1DC20050145F /* MyNavigationViewController.swift */,
+				1A808B5E1CDB9E7F0050145F /* MyMsgTableViewController.swift */,
+				1A808B601CDBA9040050145F /* MyLogTableViewController.swift */,
+				1A13797C1CE4E8B3005152A8 /* MyImagePickerViewController.swift */,
+				1A1379911CE729A6005152A8 /* ShareCollectionViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1A1379841CE71214005152A8 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				1A9C61C81CD6494D003D2C76 /* JSONResult.swift */,
+				1A9C61CA1CD64C5A003D2C76 /* ParseJSON.swift */,
+				1A1379931CE72ABE005152A8 /* ShareResult.swift */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		1A1379851CE71247005152A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A51B81A1CCFB9F4000E4768 /* PopViewItem.swift */,
+				1A1379891CE7158D005152A8 /* GradientView.swift */,
+				1AFD58681CCB1E3A0053533E /* HeaderImageView.swift */,
+				1A9C61C41CD6366C003D2C76 /* FriendTableViewCell.swift */,
+				1A6EE8211CDC5427002F1F8C /* MyMsgTableViewCell.swift */,
+				1A1379971CE72B20005152A8 /* ShareCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1A1379861CE71271005152A8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
 				1A017CB51CC91BD0007F3E6E /* LaunchScreen.storyboard */,
 				1A017CB01CC91BD0007F3E6E /* Main.storyboard */,
-				1A808B561CDA1BF90050145F /* Me.storyboard */,
+				1A6EE81C1CDC3257002F1F8C /* Me.storyboard */,
 				1A808B531CDA18830050145F /* Login.storyboard */,
 				1AFBFCDA1CCA5D5A00842AA8 /* Chat.storyboard */,
 				1AFBFCD71CCA5D4300842AA8 /* Share.storyboard */,
-				1A808B471CD9FBAF0050145F /* TestViewController.swift */,
+				1A6EE81F1CDC3D2B002F1F8C /* MsgCell.xib */,
 				1AFBFCD51CCA5D3000842AA8 /* School.storyboard */,
-				1AFD58661CCB1AF30053533E /* LoginViewController.swift */,
-				1AFD58681CCB1E3A0053533E /* HeaderImageView.swift */,
-				1AFF85851CCCFABF00C4CC47 /* RegTableViewController.swift */,
-				1AFB3A9C1CCE067100F14407 /* Functions.swift */,
-				1AFF01321CCF658F00EB24DB /* PopoverViewController.swift */,
-				1A51B81A1CCFB9F4000E4768 /* PopViewItem.swift */,
-				1A51B8221CCFD72F000E4768 /* FriendViewController.swift */,
-				1A9C61CA1CD64C5A003D2C76 /* ParseJSON.swift */,
-				1A9C61CC1CD657CF003D2C76 /* data.json */,
-				1A51B8241CCFD9FD000E4768 /* HeadImageCell.xib */,
-				1A51B8261CCFDB59000E4768 /* HeadImageTableViewCell.swift */,
 				1A9C61C21CD630A9003D2C76 /* FriendCell.xib */,
-				1A9C61C41CD6366C003D2C76 /* FriendTableViewCell.swift */,
-				1A9C61C81CD6494D003D2C76 /* JSONResult.swift */,
-				1A808B421CD9AA0F0050145F /* MyTabbarController.swift */,
-				1A808B581CDA1DC20050145F /* MyNavigationViewController.swift */,
-				1A808B5A1CDA47800050145F /* UpswipeGesRecognizer.swift */,
-				1A808B5C1CDA4D0F0050145F /* DownswipeGesRecognizer.swift */,
-				1A808B5E1CDB9E7F0050145F /* MyMsgTableViewController.swift */,
-				1A808B601CDBA9040050145F /* MyLogTableViewController.swift */,
 			);
-			path = "小微信";
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 		1AFF85871CCCFEA800C4CC47 /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
 				1AFF85881CCCFEB200C4CC47 /* SwiftNotice.swift */,
+				1A13797E1CE6DAC8005152A8 /* PraiseView.h */,
+				1A13797F1CE6DAC8005152A8 /* PraiseView.m */,
 				1AFF858D1CCCFF0F00C4CC47 /* RCAnimatedImagesView.h */,
 				1AFF858E1CCCFF2F00C4CC47 /* RCAnimatedImagesView.m */,
 				1AFF85921CCD03C300C4CC47 /* TextBox.swift */,
@@ -259,12 +320,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A017CB71CC91BD0007F3E6E /* LaunchScreen.storyboard in Resources */,
+				1A6EE8201CDC3D2B002F1F8C /* MsgCell.xib in Resources */,
 				1A017CB41CC91BD0007F3E6E /* Assets.xcassets in Resources */,
-				1A808B571CDA1BF90050145F /* Me.storyboard in Resources */,
+				1A6EE81E1CDC3257002F1F8C /* Me.storyboard in Resources */,
 				1A017CBF1CC91C49007F3E6E /* Podfile in Resources */,
 				1A017CB21CC91BD0007F3E6E /* Main.storyboard in Resources */,
 				1A9C61C31CD630A9003D2C76 /* FriendCell.xib in Resources */,
-				1A51B8251CCFD9FD000E4768 /* HeadImageCell.xib in Resources */,
 				1A9C61CD1CD657CF003D2C76 /* data.json in Resources */,
 				1A808B551CDA18830050145F /* Login.storyboard in Resources */,
 				1AFBFCD91CCA5D4300842AA8 /* Share.storyboard in Resources */,
@@ -329,29 +390,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A808B431CD9AA0F0050145F /* MyTabbarController.swift in Sources */,
+				1A6EE8221CDC5427002F1F8C /* MyMsgTableViewCell.swift in Sources */,
 				1A808B591CDA1DC20050145F /* MyNavigationViewController.swift in Sources */,
+				1A1379941CE72ABE005152A8 /* ShareResult.swift in Sources */,
 				1AFD58691CCB1E3A0053533E /* HeaderImageView.swift in Sources */,
-				1A808B5D1CDA4D0F0050145F /* DownswipeGesRecognizer.swift in Sources */,
+				1A13798C1CE715F9005152A8 /* BounceAnimationController.swift in Sources */,
 				1A51B81B1CCFB9F4000E4768 /* PopViewItem.swift in Sources */,
 				1A808B5F1CDB9E7F0050145F /* MyMsgTableViewController.swift in Sources */,
 				1A51B8231CCFD72F000E4768 /* FriendViewController.swift in Sources */,
 				1AFF85931CCD03C300C4CC47 /* TextBox.swift in Sources */,
 				1AFD58671CCB1AF30053533E /* LoginViewController.swift in Sources */,
-				1A808B5B1CDA47800050145F /* UpswipeGesRecognizer.swift in Sources */,
 				1A808B141CD7A0BE0050145F /* MyCircleTableViewController.swift in Sources */,
 				1A9C61C91CD6494D003D2C76 /* JSONResult.swift in Sources */,
 				1AFB3A9D1CCE067100F14407 /* Functions.swift in Sources */,
+				1A13798E1CE71633005152A8 /* FadeOutAnimationController.swift in Sources */,
+				1A1379801CE6DAC8005152A8 /* PraiseView.m in Sources */,
+				1A1379821CE70553005152A8 /* ShowImageViewController.swift in Sources */,
 				1AFF858F1CCCFF2F00C4CC47 /* RCAnimatedImagesView.m in Sources */,
+				1A1379881CE71583005152A8 /* DimmingPresentationController.swift in Sources */,
 				1A808B611CDBA9040050145F /* MyLogTableViewController.swift in Sources */,
-				1A808B481CD9FBAF0050145F /* TestViewController.swift in Sources */,
 				1A017CAD1CC91BD0007F3E6E /* AppDelegate.swift in Sources */,
 				1AFBFCCF1CCA378A00842AA8 /* ConversationViewController.swift in Sources */,
 				1A9C61CB1CD64C5A003D2C76 /* ParseJSON.swift in Sources */,
 				1AFF01331CCF658F00EB24DB /* PopoverViewController.swift in Sources */,
+				1A1379981CE72B20005152A8 /* ShareCollectionViewCell.swift in Sources */,
+				1A1379901CE7245F005152A8 /* MyRoundButton.swift in Sources */,
 				1AFF85861CCCFABF00C4CC47 /* RegTableViewController.swift in Sources */,
-				1A51B8271CCFDB59000E4768 /* HeadImageTableViewCell.swift in Sources */,
 				1A9C61C51CD6366C003D2C76 /* FriendTableViewCell.swift in Sources */,
 				1AFF85891CCCFEB200C4CC47 /* SwiftNotice.swift in Sources */,
+				1A13797D1CE4E8B3005152A8 /* MyImagePickerViewController.swift in Sources */,
+				1A1379921CE729A6005152A8 /* ShareCollectionViewController.swift in Sources */,
+				1A13798A1CE7158D005152A8 /* GradientView.swift in Sources */,
+				1A6EE8241CDC77FC002F1F8C /* UIEditableLabel.swift in Sources */,
 				1AFBFCD11CCA4E0F00842AA8 /* ConversationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +443,14 @@
 				1A017CB61CC91BD0007F3E6E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1A6EE81C1CDC3257002F1F8C /* Me.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A6EE81D1CDC3257002F1F8C /* Base */,
+			);
+			name = Me.storyboard;
 			sourceTree = "<group>";
 		};
 		1A808B531CDA18830050145F /* Login.storyboard */ = {

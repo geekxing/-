@@ -80,6 +80,8 @@ class ConversationTableViewController: RCConversationListViewController {
                 ])
             self.refreshConversationTableViewIfNeeded()
         }
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(named: "xsx_yjd"), forBarMetrics: .Default)
         let image = UIImage(named: "head1")
         let leftImageItemView = UIImageView(frame: CGRectMake(3, 25, 40, 40))
         leftImageItemView.layer.cornerRadius = CGFloat(20)

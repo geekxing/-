@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rfh-Nv-b2p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rfh-Nv-b2p">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -14,15 +14,45 @@
                         <viewControllerLayoutGuide type="bottom" id="RDL-4U-6ly"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1VY-Bd-NGn">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVb-Vv-wl7">
+                                <rect key="frame" x="220" y="72" width="80" height="80"/>
+                                <state key="normal" title="Button" image="xsx_xzcs"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dk-ng-zXo">
+                                <rect key="frame" x="118" y="152" width="74" height="60"/>
+                                <state key="normal" title="Button" image="xsx_hszb"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfE-YR-PkL">
+                                <rect key="frame" x="284" y="189" width="60" height="80"/>
+                                <state key="normal" title="Button" image="xsx_kbcx"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gI7-7t-yOb" customClass="MyRoundButton" customModule="小微信" customModuleProvider="target">
+                                <rect key="frame" x="143" y="249" width="120" height="120"/>
+                                <state key="normal" title="Button" image="xsx_kddq"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.64400692110000002" blue="0.94164219800000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="校上" id="BRc-UI-nfk"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rh1-5Y-eGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2631" y="1571"/>
+            <point key="canvasLocation" x="2491.5" y="1579.5"/>
         </scene>
         <!--校上-->
         <scene sceneID="rC8-Is-qmw">
@@ -47,6 +77,10 @@
     </scenes>
     <resources>
         <image name="xs" width="30" height="30"/>
+        <image name="xsx_hszb" width="125" height="101"/>
+        <image name="xsx_kbcx" width="103" height="126"/>
+        <image name="xsx_kddq" width="150" height="121"/>
         <image name="xsx_xs_green" width="30" height="30"/>
+        <image name="xsx_xzcs" width="145" height="145"/>
     </resources>
 </document>

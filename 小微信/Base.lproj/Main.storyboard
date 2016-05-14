@@ -48,7 +48,7 @@
                         <segue destination="siM-WA-D89" kind="relationship" relationship="viewControllers" id="52E-dO-A3q"/>
                         <segue destination="gvv-kn-UnW" kind="relationship" relationship="viewControllers" id="0K5-5M-zBv"/>
                         <segue destination="lv0-aK-coY" kind="relationship" relationship="viewControllers" id="OE8-26-9Dm"/>
-                        <segue destination="RoS-L8-mTA" kind="relationship" relationship="viewControllers" id="U8j-vg-7ae"/>
+                        <segue destination="52c-PW-Dc6" kind="relationship" relationship="viewControllers" id="bmc-0e-zpc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEf-cf-fdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -86,14 +86,14 @@
             <point key="canvasLocation" x="611.5" y="1032"/>
         </scene>
         <!--MeNavi-->
-        <scene sceneID="qDi-zZ-a0W">
+        <scene sceneID="gA7-gj-x4T">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MeNavi" storyboardName="Me" referencedIdentifier="MeNavi" id="RoS-L8-mTA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="x3x-ei-qBX"/>
+                <viewControllerPlaceholder storyboardIdentifier="MeNavi" storyboardName="Me" referencedIdentifier="MeNavi" id="52c-PW-Dc6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="rLz-8K-RNX"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I5n-om-fDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sNy-CO-LkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598.5" y="1470"/>
+            <point key="canvasLocation" x="603.5" y="1426"/>
         </scene>
     </scenes>
 </document>

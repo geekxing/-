@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,11 +8,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="182" id="fkl-wI-a0e" customClass="FriendTableViewCell" customModule="小微信" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="177" id="fkl-wI-a0e" customClass="FriendTableViewCell" customModule="小微信" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="177"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fkl-wI-a0e" id="bKL-lr-QsY">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="181.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="176.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTh-7Y-i3m">
@@ -27,7 +27,7 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BhO-1D-HHB">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BhO-1D-HHB">
                         <rect key="frame" x="61" y="61" width="145" height="92"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="92" id="0S7-tT-Mso"/>
@@ -45,14 +45,14 @@
                             <constraint firstAttribute="width" constant="45" id="Zax-aa-fZU"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13T-Cb-Eyy">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13T-Cb-Eyy">
                         <rect key="frame" x="61" y="156" width="29" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFv-DK-x7n">
-                        <rect key="frame" x="285" y="151" width="22" height="22"/>
+                        <rect key="frame" x="282" y="148" width="25" height="25"/>
                         <state key="normal" image="comment">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -91,13 +91,13 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="commentButton" destination="hFv-DK-x7n" id="3gn-uU-d25"/>
-                <outlet property="contentLabel" destination="dqc-9i-ZmO" id="ZRc-MO-rl9"/>
+                <outlet property="contentLabel" destination="dqc-9i-ZmO" id="8QC-9S-is2"/>
                 <outlet property="dateLabel" destination="13T-Cb-Eyy" id="BH9-vI-QAk"/>
                 <outlet property="headImgView" destination="uRT-yM-1ZO" id="fQu-jY-8BL"/>
                 <outlet property="imgView" destination="BhO-1D-HHB" id="nP6-qI-lkI"/>
-                <outlet property="titleLabel" destination="vTh-7Y-i3m" id="U4t-eG-SML"/>
+                <outlet property="titleLabel" destination="vTh-7Y-i3m" id="HBv-1W-CjS"/>
             </connections>
-            <point key="canvasLocation" x="238" y="243"/>
+            <point key="canvasLocation" x="214" y="237.5"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -8,7 +8,10 @@
 
 import UIKit
 
+let CommentButtonDidTapNotification = "CommentButtonDidTapNotification"
+
 class FriendTableViewCell: UITableViewCell {
+
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
@@ -16,11 +19,17 @@ class FriendTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var commentButton: UIButton!
+    var firstEnter = 1
+    var friendData = [String]()
+    var praiseView: PraiseView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         commentButton.addTarget(self, action: #selector(comment), forControlEvents: .TouchUpInside)
+        firstEnter = 0
+        headImgView.userInteractionEnabled = true
+        imgView.userInteractionEnabled = true
     }
     
     override func prepareForReuse() {
@@ -50,8 +59,18 @@ class FriendTableViewCell: UITableViewCell {
         }
     }
     
+    // MARK: - Cell里面的消息事件
     func comment() {
         print("点击事件")
+        NSNotificationCenter.defaultCenter().postNotificationName(CommentButtonDidTapNotification,
+                                                                  object: self)
+        if firstEnter == 0 {
+            praiseView = PraiseView()
+            self.contentView.addSubview(praiseView)
+        }
+        praiseView.array.addObject(friendData[1])
+        praiseView.addFriends()
+        firstEnter = 1
     }
     
 //    override func sizeThatFits(size: CGSize) -> CGSize {
